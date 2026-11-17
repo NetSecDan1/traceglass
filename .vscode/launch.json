@@ -1,0 +1,23 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Traceglass: Web server",
+      "type": "node",
+      "request": "launch",
+      "program": "${workspaceFolder}/src/cli.js",
+      "args": ["serve"],
+      "runtimeArgs": ["--env-file-if-exists=.env"],
+      "cwd": "${workspaceFolder}",
+      "skipFiles": ["<node_internals>/**"]
+    },
+    {
+      "name": "Traceglass: CLI demo",
+      "type": "node",
+      "request": "launch",
+      "program": "${workspaceFolder}/src/cli.js",
+      "args": ["investigate", "--demo", "--user", "alex.morgan@example.com"],
+      "console": "integratedTerminal"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "name": "traceglass",
+  "version": "0.1.0",
+  "description": "Evidence-led Microsoft Entra Conditional Access investigation and KQL hunting workspace",
+  "type": "module",
+  "private": true,
+  "license": "MIT",
+  "engines": {
+    "node": ">=22"
+  },
+  "bin": {
+    "traceglass": "src/cli.js"
+  },
+  "scripts": {
+    "start": "node --env-file-if-exists=.env src/cli.js serve",
+    "dev": "node --env-file-if-exists=.env --watch src/cli.js serve",
+    "demo": "node src/cli.js investigate --demo --user alex.morgan@example.com",
+    "test": "node --test",
+    "check": "node scripts/check.js",
+    "format": "prettier --write src web tests scripts fixtures/generate-demo.js *.json .vscode .github"
+  },
+  "dependencies": {
+    "@azure/identity": "4.14.1"
+  },
+  "devDependencies": {
+    "prettier": "3.6.2"
+  }
+}

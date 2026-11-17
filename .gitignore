@@ -1,0 +1,16 @@
+node_modules/
+.env
+.env.*
+!.env.example
+data/
+exports/
+*.log
+coverage/
+.DS_Store
+Thumbs.db
+.azure/
+*.pem
+*.pfx
+*.key
+*.har
+artifacts/

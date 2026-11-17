@@ -1,0 +1,73 @@
+let Observed =
+// Traceglass: interactive + non-interactive user sign-ins. Read-only.
+// Normalize dynamic/string columns before union to prevent suffixed column loss.
+union isfuzzy=true
+(SigninLogs
+    | where coalesce(todatetime(column_ifexists("CreatedDateTime", TimeGenerated)), TimeGenerated) >= ago(24h)
+    | project TimeGenerated, CreatedDateTime = coalesce(todatetime(column_ifexists("CreatedDateTime", TimeGenerated)), TimeGenerated),
+        SourceTable = 'SigninLogs', IsInteractive = tobool(column_ifexists("IsInteractive", bool(null))),
+        Id = tostring(column_ifexists("Id", "")),
+        UserPrincipalName = tostring(column_ifexists("UserPrincipalName", "")),
+        UserDisplayName = tostring(column_ifexists("UserDisplayName", "")),
+        UserId = tostring(column_ifexists("UserId", "")),
+        AppDisplayName = tostring(column_ifexists("AppDisplayName", "")),
+        AppId = tostring(column_ifexists("AppId", "")),
+        ResourceDisplayName = tostring(column_ifexists("ResourceDisplayName", "")),
+        IPAddress = tostring(column_ifexists("IPAddress", "")),
+        ResultType = tostring(column_ifexists("ResultType", "")),
+        ResultDescription = tostring(column_ifexists("ResultDescription", "")),
+        ConditionalAccessStatus = tostring(column_ifexists("ConditionalAccessStatus", "")),
+        CorrelationId = tostring(column_ifexists("CorrelationId", "")),
+        OriginalRequestId = tostring(column_ifexists("OriginalRequestId", "")),
+        SessionId = tostring(column_ifexists("SessionId", "")),
+        RiskLevelDuringSignIn = tostring(column_ifexists("RiskLevelDuringSignIn", "")),
+        RiskLevelAggregated = tostring(column_ifexists("RiskLevelAggregated", "")),
+        RiskState = tostring(column_ifexists("RiskState", "")),
+        ClientAppUsed = tostring(column_ifexists("ClientAppUsed", "")),
+        AuthenticationRequirement = tostring(column_ifexists("AuthenticationRequirement", "")),
+        Location = tostring(column_ifexists("Location", "")),
+        ConditionalAccessPolicies = parse_json(tostring(column_ifexists("ConditionalAccessPolicies", ""))),
+        DeviceDetail = parse_json(tostring(column_ifexists("DeviceDetail", ""))),
+        LocationDetails = parse_json(tostring(column_ifexists("LocationDetails", ""))),
+        AuthenticationDetails = parse_json(tostring(column_ifexists("AuthenticationDetails", ""))),
+        Status = parse_json(tostring(column_ifexists("Status", ""))),
+        SignInEventTypes = parse_json(tostring(column_ifexists("SignInEventTypes", "")))),
+(AADNonInteractiveUserSignInLogs
+    | where coalesce(todatetime(column_ifexists("CreatedDateTime", TimeGenerated)), TimeGenerated) >= ago(24h)
+    | project TimeGenerated, CreatedDateTime = coalesce(todatetime(column_ifexists("CreatedDateTime", TimeGenerated)), TimeGenerated),
+        SourceTable = 'AADNonInteractiveUserSignInLogs', IsInteractive = tobool(column_ifexists("IsInteractive", false)),
+        Id = tostring(column_ifexists("Id", "")),
+        UserPrincipalName = tostring(column_ifexists("UserPrincipalName", "")),
+        UserDisplayName = tostring(column_ifexists("UserDisplayName", "")),
+        UserId = tostring(column_ifexists("UserId", "")),
+        AppDisplayName = tostring(column_ifexists("AppDisplayName", "")),
+        AppId = tostring(column_ifexists("AppId", "")),
+        ResourceDisplayName = tostring(column_ifexists("ResourceDisplayName", "")),
+        IPAddress = tostring(column_ifexists("IPAddress", "")),
+        ResultType = tostring(column_ifexists("ResultType", "")),
+        ResultDescription = tostring(column_ifexists("ResultDescription", "")),
+        ConditionalAccessStatus = tostring(column_ifexists("ConditionalAccessStatus", "")),
+        CorrelationId = tostring(column_ifexists("CorrelationId", "")),
+        OriginalRequestId = tostring(column_ifexists("OriginalRequestId", "")),
+        SessionId = tostring(column_ifexists("SessionId", "")),
+        RiskLevelDuringSignIn = tostring(column_ifexists("RiskLevelDuringSignIn", "")),
+        RiskLevelAggregated = tostring(column_ifexists("RiskLevelAggregated", "")),
+        RiskState = tostring(column_ifexists("RiskState", "")),
+        ClientAppUsed = tostring(column_ifexists("ClientAppUsed", "")),
+        AuthenticationRequirement = tostring(column_ifexists("AuthenticationRequirement", "")),
+        Location = tostring(column_ifexists("Location", "")),
+        ConditionalAccessPolicies = parse_json(tostring(column_ifexists("ConditionalAccessPolicies", ""))),
+        DeviceDetail = parse_json(tostring(column_ifexists("DeviceDetail", ""))),
+        LocationDetails = parse_json(tostring(column_ifexists("LocationDetails", ""))),
+        AuthenticationDetails = parse_json(tostring(column_ifexists("AuthenticationDetails", ""))),
+        Status = parse_json(tostring(column_ifexists("Status", ""))),
+        SignInEventTypes = parse_json(tostring(column_ifexists("SignInEventTypes", ""))));
+let Baseline = toscalar(Observed | where CreatedDateTime < ago(1h) | summarize Rate = todouble(countif(ConditionalAccessStatus =~ 'failure')) / count() | project Rate);
+let BaselineCount = toscalar(Observed | where CreatedDateTime < ago(1h) | count);
+Observed
+| where CreatedDateTime >= ago(1h)
+| summarize Total = count(), CAFailures = countif(ConditionalAccessStatus =~ 'failure'), Users = dcount(UserPrincipalName) by bin(CreatedDateTime, 5m)
+| extend FailureRate = todouble(CAFailures) / Total, BaselineRate = Baseline, BaselineRecords = BaselineCount
+| extend IsSpike = BaselineRecords >= 20 and Total >= 5 and CAFailures >= 3 and FailureRate > max_of(0.2, 3.0 * BaselineRate)
+| order by CreatedDateTime asc
+| take 1000

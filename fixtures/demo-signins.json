@@ -1,0 +1,4241 @@
+{
+  "synthetic": true,
+  "description": "Synthetic Traceglass demonstration. All identities use example.com and all IP addresses are documentation ranges. No live tenant data.",
+  "value": [
+    {
+      "id": "demo-event-001",
+      "createdDateTime": "2026-11-16T08:00:00Z",
+      "userPrincipalName": "alex.morgan@example.com",
+      "userDisplayName": "Alex Morgan",
+      "userId": "demo-user-alex.morgan",
+      "appId": "demo-app-office",
+      "appDisplayName": "Microsoft Office",
+      "resourceDisplayName": "Microsoft Graph",
+      "ipAddress": "192.0.2.24",
+      "isInteractive": true,
+      "signInEventTypes": [
+        "interactiveUser"
+      ],
+      "status": {
+        "errorCode": 0,
+        "failureReason": "",
+        "additionalDetails": ""
+      },
+      "conditionalAccessStatus": "success",
+      "correlationId": "demo-correlation-1",
+      "originalRequestId": "demo-request-1",
+      "sessionId": "demo-session-alex.morgan",
+      "deviceDetail": {
+        "deviceId": "demo-device-01",
+        "displayName": "SYNTHETIC-WKS-01",
+        "operatingSystem": "Windows 11",
+        "browser": "Edge 132",
+        "isCompliant": true,
+        "isManaged": true,
+        "trustType": "Azure AD joined"
+      },
+      "location": {
+        "city": "New York",
+        "countryOrRegion": "US"
+      },
+      "riskLevelDuringSignIn": "none",
+      "riskState": "none",
+      "clientAppUsed": "Browser",
+      "authenticationRequirement": "multiFactorAuthentication",
+      "appliedConditionalAccessPolicies": [
+        {
+          "id": "demo-ca-01",
+          "displayName": "Require phishing-resistant MFA",
+          "result": "success",
+          "enforcedGrantControls": [
+            "AuthenticationStrength"
+          ],
+          "enforcedSessionControls": []
+        },
+        {
+          "id": "demo-ca-02",
+          "displayName": "Require compliant device",
+          "result": "success",
+          "enforcedGrantControls": [
+            "CompliantDevice"
+          ],
+          "enforcedSessionControls": []
+        }
+      ],
+      "authenticationDetails": [
+        {
+          "authenticationStepDateTime": "2026-11-16T08:00:00Z",
+          "authenticationMethod": "FIDO2 security key",
+          "succeeded": true,
+          "authenticationStepResultDetail": "MFA completed"
+        }
+      ]
+    },
+    {
+      "id": "demo-event-002",
+      "createdDateTime": "2026-11-16T08:02:00Z",
+      "userPrincipalName": "jamie.chen@example.com",
+      "userDisplayName": "Jamie Chen",
+      "userId": "demo-user-jamie.chen",
+      "appId": "demo-app-teams",
+      "appDisplayName": "Microsoft Teams",
+      "resourceDisplayName": "Microsoft Teams Services",
+      "ipAddress": "198.51.100.12",
+      "isInteractive": false,
+      "signInEventTypes": [
+        "nonInteractiveUser"
+      ],
+      "status": {
+        "errorCode": 0,
+        "failureReason": "",
+        "additionalDetails": ""
+      },
+      "conditionalAccessStatus": "success",
+      "correlationId": "demo-correlation-2",
+      "originalRequestId": "demo-request-2",
+      "sessionId": "demo-session-jamie.chen",
+      "deviceDetail": {
+        "deviceId": "demo-device-01",
+        "displayName": "SYNTHETIC-WKS-01",
+        "operatingSystem": "Windows 11",
+        "browser": "",
+        "isCompliant": true,
+        "isManaged": true,
+        "trustType": "Azure AD joined"
+      },
+      "location": {
+        "city": "New York",
+        "countryOrRegion": "US"
+      },
+      "riskLevelDuringSignIn": "none",
+      "riskState": "none",
+      "clientAppUsed": "Mobile Apps and Desktop clients",
+      "authenticationRequirement": "multiFactorAuthentication",
+      "appliedConditionalAccessPolicies": [
+        {
+          "id": "demo-ca-01",
+          "displayName": "Require phishing-resistant MFA",
+          "result": "success",
+          "enforcedGrantControls": [
+            "AuthenticationStrength"
+          ],
+          "enforcedSessionControls": []
+        },
+        {
+          "id": "demo-ca-02",
+          "displayName": "Require compliant device",
+          "result": "success",
+          "enforcedGrantControls": [
+            "CompliantDevice"
+          ],
+          "enforcedSessionControls": []
+        }
+      ],
+      "authenticationDetails": [
+        {
+          "authenticationStepDateTime": "2026-11-16T08:02:00Z",
+          "authenticationMethod": "Previously satisfied",
+          "succeeded": true,
+          "authenticationStepResultDetail": "MFA requirement satisfied by claim in the token"
+        }
+      ]
+    },
+    {
+      "id": "demo-event-003",
+      "createdDateTime": "2026-11-16T08:04:00Z",
+      "userPrincipalName": "sam.patel@example.com",
+      "userDisplayName": "Sam Patel",
+      "userId": "demo-user-sam.patel",
+      "appId": "demo-app-teams",
+      "appDisplayName": "Microsoft Teams",
+      "resourceDisplayName": "Microsoft Teams Services",
+      "ipAddress": "203.0.113.8",
+      "isInteractive": false,
+      "signInEventTypes": [
+        "nonInteractiveUser"
+      ],
+      "status": {
+        "errorCode": 0,
+        "failureReason": "",
+        "additionalDetails": ""
+      },
+      "conditionalAccessStatus": "success",
+      "correlationId": "demo-correlation-3",
+      "originalRequestId": "demo-request-3",
+      "sessionId": "demo-session-sam.patel",
+      "deviceDetail": {
+        "deviceId": "demo-device-01",
+        "displayName": "SYNTHETIC-WKS-01",
+        "operatingSystem": "Windows 11",
+        "browser": "",
+        "isCompliant": true,
+        "isManaged": true,
+        "trustType": "Azure AD joined"
+      },
+      "location": {
+        "city": "New York",
+        "countryOrRegion": "US"
+      },
+      "riskLevelDuringSignIn": "none",
+      "riskState": "none",
+      "clientAppUsed": "Mobile Apps and Desktop clients",
+      "authenticationRequirement": "multiFactorAuthentication",
+      "appliedConditionalAccessPolicies": [
+        {
+          "id": "demo-ca-01",
+          "displayName": "Require phishing-resistant MFA",
+          "result": "success",
+          "enforcedGrantControls": [
+            "AuthenticationStrength"
+          ],
+          "enforcedSessionControls": []
+        },
+        {
+          "id": "demo-ca-02",
+          "displayName": "Require compliant device",
+          "result": "success",
+          "enforcedGrantControls": [
+            "CompliantDevice"
+          ],
+          "enforcedSessionControls": []
+        }
+      ],
+      "authenticationDetails": [
+        {
+          "authenticationStepDateTime": "2026-11-16T08:04:00Z",
+          "authenticationMethod": "Previously satisfied",
+          "succeeded": true,
+          "authenticationStepResultDetail": "MFA requirement satisfied by claim in the token"
+        }
+      ]
+    },
+    {
+      "id": "demo-event-004",
+      "createdDateTime": "2026-11-16T08:06:00Z",
+      "userPrincipalName": "alex.morgan@example.com",
+      "userDisplayName": "Alex Morgan",
+      "userId": "demo-user-alex.morgan",
+      "appId": "demo-app-office",
+      "appDisplayName": "Microsoft Office",
+      "resourceDisplayName": "Microsoft Graph",
+      "ipAddress": "192.0.2.24",
+      "isInteractive": false,
+      "signInEventTypes": [
+        "nonInteractiveUser"
+      ],
+      "status": {
+        "errorCode": 0,
+        "failureReason": "",
+        "additionalDetails": ""
+      },
+      "conditionalAccessStatus": "success",
+      "correlationId": "demo-correlation-4",
+      "originalRequestId": "demo-request-4",
+      "sessionId": "demo-session-alex.morgan",
+      "deviceDetail": {
+        "deviceId": "demo-device-01",
+        "displayName": "SYNTHETIC-WKS-01",
+        "operatingSystem": "Windows 11",
+        "browser": "",
+        "isCompliant": true,
+        "isManaged": true,
+        "trustType": "Azure AD joined"
+      },
+      "location": {
+        "city": "New York",
+        "countryOrRegion": "US"
+      },
+      "riskLevelDuringSignIn": "none",
+      "riskState": "none",
+      "clientAppUsed": "Mobile Apps and Desktop clients",
+      "authenticationRequirement": "multiFactorAuthentication",
+      "appliedConditionalAccessPolicies": [
+        {
+          "id": "demo-ca-01",
+          "displayName": "Require phishing-resistant MFA",
+          "result": "success",
+          "enforcedGrantControls": [
+            "AuthenticationStrength"
+          ],
+          "enforcedSessionControls": []
+        },
+        {
+          "id": "demo-ca-02",
+          "displayName": "Require compliant device",
+          "result": "success",
+          "enforcedGrantControls": [
+            "CompliantDevice"
+          ],
+          "enforcedSessionControls": []
+        }
+      ],
+      "authenticationDetails": [
+        {
+          "authenticationStepDateTime": "2026-11-16T08:06:00Z",
+          "authenticationMethod": "Previously satisfied",
+          "succeeded": true,
+          "authenticationStepResultDetail": "MFA requirement satisfied by claim in the token"
+        }
+      ]
+    },
+    {
+      "id": "demo-event-005",
+      "createdDateTime": "2026-11-16T08:08:00Z",
+      "userPrincipalName": "jamie.chen@example.com",
+      "userDisplayName": "Jamie Chen",
+      "userId": "demo-user-jamie.chen",
+      "appId": "demo-app-teams",
+      "appDisplayName": "Microsoft Teams",
+      "resourceDisplayName": "Microsoft Teams Services",
+      "ipAddress": "198.51.100.12",
+      "isInteractive": false,
+      "signInEventTypes": [
+        "nonInteractiveUser"
+      ],
+      "status": {
+        "errorCode": 0,
+        "failureReason": "",
+        "additionalDetails": ""
+      },
+      "conditionalAccessStatus": "success",
+      "correlationId": "demo-correlation-5",
+      "originalRequestId": "demo-request-5",
+      "sessionId": "demo-session-jamie.chen",
+      "deviceDetail": {
+        "deviceId": "demo-device-01",
+        "displayName": "SYNTHETIC-WKS-01",
+        "operatingSystem": "Windows 11",
+        "browser": "",
+        "isCompliant": true,
+        "isManaged": true,
+        "trustType": "Azure AD joined"
+      },
+      "location": {
+        "city": "New York",
+        "countryOrRegion": "US"
+      },
+      "riskLevelDuringSignIn": "none",
+      "riskState": "none",
+      "clientAppUsed": "Mobile Apps and Desktop clients",
+      "authenticationRequirement": "multiFactorAuthentication",
+      "appliedConditionalAccessPolicies": [
+        {
+          "id": "demo-ca-01",
+          "displayName": "Require phishing-resistant MFA",
+          "result": "success",
+          "enforcedGrantControls": [
+            "AuthenticationStrength"
+          ],
+          "enforcedSessionControls": []
+        },
+        {
+          "id": "demo-ca-02",
+          "displayName": "Require compliant device",
+          "result": "success",
+          "enforcedGrantControls": [
+            "CompliantDevice"
+          ],
+          "enforcedSessionControls": []
+        }
+      ],
+      "authenticationDetails": [
+        {
+          "authenticationStepDateTime": "2026-11-16T08:08:00Z",
+          "authenticationMethod": "Previously satisfied",
+          "succeeded": true,
+          "authenticationStepResultDetail": "MFA requirement satisfied by claim in the token"
+        }
+      ]
+    },
+    {
+      "id": "demo-event-006",
+      "createdDateTime": "2026-11-16T08:10:00Z",
+      "userPrincipalName": "sam.patel@example.com",
+      "userDisplayName": "Sam Patel",
+      "userId": "demo-user-sam.patel",
+      "appId": "demo-app-teams",
+      "appDisplayName": "Microsoft Teams",
+      "resourceDisplayName": "Microsoft Teams Services",
+      "ipAddress": "203.0.113.8",
+      "isInteractive": false,
+      "signInEventTypes": [
+        "nonInteractiveUser"
+      ],
+      "status": {
+        "errorCode": 0,
+        "failureReason": "",
+        "additionalDetails": ""
+      },
+      "conditionalAccessStatus": "success",
+      "correlationId": "demo-correlation-6",
+      "originalRequestId": "demo-request-6",
+      "sessionId": "demo-session-sam.patel",
+      "deviceDetail": {
+        "deviceId": "demo-device-01",
+        "displayName": "SYNTHETIC-WKS-01",
+        "operatingSystem": "Windows 11",
+        "browser": "",
+        "isCompliant": true,
+        "isManaged": true,
+        "trustType": "Azure AD joined"
+      },
+      "location": {
+        "city": "New York",
+        "countryOrRegion": "US"
+      },
+      "riskLevelDuringSignIn": "none",
+      "riskState": "none",
+      "clientAppUsed": "Mobile Apps and Desktop clients",
+      "authenticationRequirement": "multiFactorAuthentication",
+      "appliedConditionalAccessPolicies": [
+        {
+          "id": "demo-ca-01",
+          "displayName": "Require phishing-resistant MFA",
+          "result": "success",
+          "enforcedGrantControls": [
+            "AuthenticationStrength"
+          ],
+          "enforcedSessionControls": []
+        },
+        {
+          "id": "demo-ca-02",
+          "displayName": "Require compliant device",
+          "result": "success",
+          "enforcedGrantControls": [
+            "CompliantDevice"
+          ],
+          "enforcedSessionControls": []
+        }
+      ],
+      "authenticationDetails": [
+        {
+          "authenticationStepDateTime": "2026-11-16T08:10:00Z",
+          "authenticationMethod": "Previously satisfied",
+          "succeeded": true,
+          "authenticationStepResultDetail": "MFA requirement satisfied by claim in the token"
+        }
+      ]
+    },
+    {
+      "id": "demo-event-007",
+      "createdDateTime": "2026-11-16T08:12:00Z",
+      "userPrincipalName": "alex.morgan@example.com",
+      "userDisplayName": "Alex Morgan",
+      "userId": "demo-user-alex.morgan",
+      "appId": "demo-app-office",
+      "appDisplayName": "Microsoft Office",
+      "resourceDisplayName": "Microsoft Graph",
+      "ipAddress": "192.0.2.24",
+      "isInteractive": false,
+      "signInEventTypes": [
+        "nonInteractiveUser"
+      ],
+      "status": {
+        "errorCode": 0,
+        "failureReason": "",
+        "additionalDetails": ""
+      },
+      "conditionalAccessStatus": "success",
+      "correlationId": "demo-correlation-7",
+      "originalRequestId": "demo-request-7",
+      "sessionId": "demo-session-alex.morgan",
+      "deviceDetail": {
+        "deviceId": "demo-device-01",
+        "displayName": "SYNTHETIC-WKS-01",
+        "operatingSystem": "Windows 11",
+        "browser": "",
+        "isCompliant": true,
+        "isManaged": true,
+        "trustType": "Azure AD joined"
+      },
+      "location": {
+        "city": "New York",
+        "countryOrRegion": "US"
+      },
+      "riskLevelDuringSignIn": "none",
+      "riskState": "none",
+      "clientAppUsed": "Mobile Apps and Desktop clients",
+      "authenticationRequirement": "multiFactorAuthentication",
+      "appliedConditionalAccessPolicies": [
+        {
+          "id": "demo-ca-01",
+          "displayName": "Require phishing-resistant MFA",
+          "result": "success",
+          "enforcedGrantControls": [
+            "AuthenticationStrength"
+          ],
+          "enforcedSessionControls": []
+        },
+        {
+          "id": "demo-ca-02",
+          "displayName": "Require compliant device",
+          "result": "success",
+          "enforcedGrantControls": [
+            "CompliantDevice"
+          ],
+          "enforcedSessionControls": []
+        }
+      ],
+      "authenticationDetails": [
+        {
+          "authenticationStepDateTime": "2026-11-16T08:12:00Z",
+          "authenticationMethod": "Previously satisfied",
+          "succeeded": true,
+          "authenticationStepResultDetail": "MFA requirement satisfied by claim in the token"
+        }
+      ]
+    },
+    {
+      "id": "demo-event-008",
+      "createdDateTime": "2026-11-16T08:14:00Z",
+      "userPrincipalName": "jamie.chen@example.com",
+      "userDisplayName": "Jamie Chen",
+      "userId": "demo-user-jamie.chen",
+      "appId": "demo-app-teams",
+      "appDisplayName": "Microsoft Teams",
+      "resourceDisplayName": "Microsoft Teams Services",
+      "ipAddress": "198.51.100.12",
+      "isInteractive": false,
+      "signInEventTypes": [
+        "nonInteractiveUser"
+      ],
+      "status": {
+        "errorCode": 0,
+        "failureReason": "",
+        "additionalDetails": ""
+      },
+      "conditionalAccessStatus": "success",
+      "correlationId": "demo-correlation-8",
+      "originalRequestId": "demo-request-8",
+      "sessionId": "demo-session-jamie.chen",
+      "deviceDetail": {
+        "deviceId": "demo-device-01",
+        "displayName": "SYNTHETIC-WKS-01",
+        "operatingSystem": "Windows 11",
+        "browser": "",
+        "isCompliant": true,
+        "isManaged": true,
+        "trustType": "Azure AD joined"
+      },
+      "location": {
+        "city": "New York",
+        "countryOrRegion": "US"
+      },
+      "riskLevelDuringSignIn": "none",
+      "riskState": "none",
+      "clientAppUsed": "Mobile Apps and Desktop clients",
+      "authenticationRequirement": "multiFactorAuthentication",
+      "appliedConditionalAccessPolicies": [
+        {
+          "id": "demo-ca-01",
+          "displayName": "Require phishing-resistant MFA",
+          "result": "success",
+          "enforcedGrantControls": [
+            "AuthenticationStrength"
+          ],
+          "enforcedSessionControls": []
+        },
+        {
+          "id": "demo-ca-02",
+          "displayName": "Require compliant device",
+          "result": "success",
+          "enforcedGrantControls": [
+            "CompliantDevice"
+          ],
+          "enforcedSessionControls": []
+        }
+      ],
+      "authenticationDetails": [
+        {
+          "authenticationStepDateTime": "2026-11-16T08:14:00Z",
+          "authenticationMethod": "Previously satisfied",
+          "succeeded": true,
+          "authenticationStepResultDetail": "MFA requirement satisfied by claim in the token"
+        }
+      ]
+    },
+    {
+      "id": "demo-event-009",
+      "createdDateTime": "2026-11-16T08:16:00Z",
+      "userPrincipalName": "sam.patel@example.com",
+      "userDisplayName": "Sam Patel",
+      "userId": "demo-user-sam.patel",
+      "appId": "demo-app-teams",
+      "appDisplayName": "Microsoft Teams",
+      "resourceDisplayName": "Microsoft Teams Services",
+      "ipAddress": "203.0.113.8",
+      "isInteractive": true,
+      "signInEventTypes": [
+        "interactiveUser"
+      ],
+      "status": {
+        "errorCode": 0,
+        "failureReason": "",
+        "additionalDetails": ""
+      },
+      "conditionalAccessStatus": "success",
+      "correlationId": "demo-correlation-9",
+      "originalRequestId": "demo-request-9",
+      "sessionId": "demo-session-sam.patel",
+      "deviceDetail": {
+        "deviceId": "demo-device-01",
+        "displayName": "SYNTHETIC-WKS-01",
+        "operatingSystem": "Windows 11",
+        "browser": "Edge 132",
+        "isCompliant": true,
+        "isManaged": true,
+        "trustType": "Azure AD joined"
+      },
+      "location": {
+        "city": "New York",
+        "countryOrRegion": "US"
+      },
+      "riskLevelDuringSignIn": "none",
+      "riskState": "none",
+      "clientAppUsed": "Browser",
+      "authenticationRequirement": "multiFactorAuthentication",
+      "appliedConditionalAccessPolicies": [
+        {
+          "id": "demo-ca-01",
+          "displayName": "Require phishing-resistant MFA",
+          "result": "success",
+          "enforcedGrantControls": [
+            "AuthenticationStrength"
+          ],
+          "enforcedSessionControls": []
+        },
+        {
+          "id": "demo-ca-02",
+          "displayName": "Require compliant device",
+          "result": "success",
+          "enforcedGrantControls": [
+            "CompliantDevice"
+          ],
+          "enforcedSessionControls": []
+        }
+      ],
+      "authenticationDetails": [
+        {
+          "authenticationStepDateTime": "2026-11-16T08:16:00Z",
+          "authenticationMethod": "FIDO2 security key",
+          "succeeded": true,
+          "authenticationStepResultDetail": "MFA completed"
+        }
+      ]
+    },
+    {
+      "id": "demo-event-010",
+      "createdDateTime": "2026-11-16T08:18:00Z",
+      "userPrincipalName": "alex.morgan@example.com",
+      "userDisplayName": "Alex Morgan",
+      "userId": "demo-user-alex.morgan",
+      "appId": "demo-app-office",
+      "appDisplayName": "Microsoft Office",
+      "resourceDisplayName": "Microsoft Graph",
+      "ipAddress": "192.0.2.24",
+      "isInteractive": false,
+      "signInEventTypes": [
+        "nonInteractiveUser"
+      ],
+      "status": {
+        "errorCode": 0,
+        "failureReason": "",
+        "additionalDetails": ""
+      },
+      "conditionalAccessStatus": "success",
+      "correlationId": "demo-correlation-10",
+      "originalRequestId": "demo-request-10",
+      "sessionId": "demo-session-alex.morgan",
+      "deviceDetail": {
+        "deviceId": "demo-device-01",
+        "displayName": "SYNTHETIC-WKS-01",
+        "operatingSystem": "Windows 11",
+        "browser": "",
+        "isCompliant": true,
+        "isManaged": true,
+        "trustType": "Azure AD joined"
+      },
+      "location": {
+        "city": "New York",
+        "countryOrRegion": "US"
+      },
+      "riskLevelDuringSignIn": "none",
+      "riskState": "none",
+      "clientAppUsed": "Mobile Apps and Desktop clients",
+      "authenticationRequirement": "multiFactorAuthentication",
+      "appliedConditionalAccessPolicies": [
+        {
+          "id": "demo-ca-01",
+          "displayName": "Require phishing-resistant MFA",
+          "result": "success",
+          "enforcedGrantControls": [
+            "AuthenticationStrength"
+          ],
+          "enforcedSessionControls": []
+        },
+        {
+          "id": "demo-ca-02",
+          "displayName": "Require compliant device",
+          "result": "success",
+          "enforcedGrantControls": [
+            "CompliantDevice"
+          ],
+          "enforcedSessionControls": []
+        }
+      ],
+      "authenticationDetails": [
+        {
+          "authenticationStepDateTime": "2026-11-16T08:18:00Z",
+          "authenticationMethod": "Previously satisfied",
+          "succeeded": true,
+          "authenticationStepResultDetail": "MFA requirement satisfied by claim in the token"
+        }
+      ]
+    },
+    {
+      "id": "demo-event-011",
+      "createdDateTime": "2026-11-16T08:20:00Z",
+      "userPrincipalName": "jamie.chen@example.com",
+      "userDisplayName": "Jamie Chen",
+      "userId": "demo-user-jamie.chen",
+      "appId": "demo-app-teams",
+      "appDisplayName": "Microsoft Teams",
+      "resourceDisplayName": "Microsoft Teams Services",
+      "ipAddress": "198.51.100.12",
+      "isInteractive": false,
+      "signInEventTypes": [
+        "nonInteractiveUser"
+      ],
+      "status": {
+        "errorCode": 0,
+        "failureReason": "",
+        "additionalDetails": ""
+      },
+      "conditionalAccessStatus": "success",
+      "correlationId": "demo-correlation-11",
+      "originalRequestId": "demo-request-11",
+      "sessionId": "demo-session-jamie.chen",
+      "deviceDetail": {
+        "deviceId": "demo-device-01",
+        "displayName": "SYNTHETIC-WKS-01",
+        "operatingSystem": "Windows 11",
+        "browser": "",
+        "isCompliant": true,
+        "isManaged": true,
+        "trustType": "Azure AD joined"
+      },
+      "location": {
+        "city": "New York",
+        "countryOrRegion": "US"
+      },
+      "riskLevelDuringSignIn": "none",
+      "riskState": "none",
+      "clientAppUsed": "Mobile Apps and Desktop clients",
+      "authenticationRequirement": "multiFactorAuthentication",
+      "appliedConditionalAccessPolicies": [
+        {
+          "id": "demo-ca-01",
+          "displayName": "Require phishing-resistant MFA",
+          "result": "success",
+          "enforcedGrantControls": [
+            "AuthenticationStrength"
+          ],
+          "enforcedSessionControls": []
+        },
+        {
+          "id": "demo-ca-02",
+          "displayName": "Require compliant device",
+          "result": "success",
+          "enforcedGrantControls": [
+            "CompliantDevice"
+          ],
+          "enforcedSessionControls": []
+        }
+      ],
+      "authenticationDetails": [
+        {
+          "authenticationStepDateTime": "2026-11-16T08:20:00Z",
+          "authenticationMethod": "Previously satisfied",
+          "succeeded": true,
+          "authenticationStepResultDetail": "MFA requirement satisfied by claim in the token"
+        }
+      ]
+    },
+    {
+      "id": "demo-event-012",
+      "createdDateTime": "2026-11-16T08:22:00Z",
+      "userPrincipalName": "sam.patel@example.com",
+      "userDisplayName": "Sam Patel",
+      "userId": "demo-user-sam.patel",
+      "appId": "demo-app-teams",
+      "appDisplayName": "Microsoft Teams",
+      "resourceDisplayName": "Microsoft Teams Services",
+      "ipAddress": "203.0.113.8",
+      "isInteractive": false,
+      "signInEventTypes": [
+        "nonInteractiveUser"
+      ],
+      "status": {
+        "errorCode": 0,
+        "failureReason": "",
+        "additionalDetails": ""
+      },
+      "conditionalAccessStatus": "success",
+      "correlationId": "demo-correlation-12",
+      "originalRequestId": "demo-request-12",
+      "sessionId": "demo-session-sam.patel",
+      "deviceDetail": {
+        "deviceId": "demo-device-01",
+        "displayName": "SYNTHETIC-WKS-01",
+        "operatingSystem": "Windows 11",
+        "browser": "",
+        "isCompliant": true,
+        "isManaged": true,
+        "trustType": "Azure AD joined"
+      },
+      "location": {
+        "city": "New York",
+        "countryOrRegion": "US"
+      },
+      "riskLevelDuringSignIn": "none",
+      "riskState": "none",
+      "clientAppUsed": "Mobile Apps and Desktop clients",
+      "authenticationRequirement": "multiFactorAuthentication",
+      "appliedConditionalAccessPolicies": [
+        {
+          "id": "demo-ca-01",
+          "displayName": "Require phishing-resistant MFA",
+          "result": "success",
+          "enforcedGrantControls": [
+            "AuthenticationStrength"
+          ],
+          "enforcedSessionControls": []
+        },
+        {
+          "id": "demo-ca-02",
+          "displayName": "Require compliant device",
+          "result": "success",
+          "enforcedGrantControls": [
+            "CompliantDevice"
+          ],
+          "enforcedSessionControls": []
+        }
+      ],
+      "authenticationDetails": [
+        {
+          "authenticationStepDateTime": "2026-11-16T08:22:00Z",
+          "authenticationMethod": "Previously satisfied",
+          "succeeded": true,
+          "authenticationStepResultDetail": "MFA requirement satisfied by claim in the token"
+        }
+      ]
+    },
+    {
+      "id": "demo-event-013",
+      "createdDateTime": "2026-11-16T08:24:00Z",
+      "userPrincipalName": "alex.morgan@example.com",
+      "userDisplayName": "Alex Morgan",
+      "userId": "demo-user-alex.morgan",
+      "appId": "demo-app-office",
+      "appDisplayName": "Microsoft Office",
+      "resourceDisplayName": "Microsoft Graph",
+      "ipAddress": "192.0.2.24",
+      "isInteractive": false,
+      "signInEventTypes": [
+        "nonInteractiveUser"
+      ],
+      "status": {
+        "errorCode": 0,
+        "failureReason": "",
+        "additionalDetails": ""
+      },
+      "conditionalAccessStatus": "success",
+      "correlationId": "demo-correlation-13",
+      "originalRequestId": "demo-request-13",
+      "sessionId": "demo-session-alex.morgan",
+      "deviceDetail": {
+        "deviceId": "demo-device-01",
+        "displayName": "SYNTHETIC-WKS-01",
+        "operatingSystem": "Windows 11",
+        "browser": "",
+        "isCompliant": true,
+        "isManaged": true,
+        "trustType": "Azure AD joined"
+      },
+      "location": {
+        "city": "New York",
+        "countryOrRegion": "US"
+      },
+      "riskLevelDuringSignIn": "none",
+      "riskState": "none",
+      "clientAppUsed": "Mobile Apps and Desktop clients",
+      "authenticationRequirement": "multiFactorAuthentication",
+      "appliedConditionalAccessPolicies": [
+        {
+          "id": "demo-ca-01",
+          "displayName": "Require phishing-resistant MFA",
+          "result": "success",
+          "enforcedGrantControls": [
+            "AuthenticationStrength"
+          ],
+          "enforcedSessionControls": []
+        },
+        {
+          "id": "demo-ca-02",
+          "displayName": "Require compliant device",
+          "result": "success",
+          "enforcedGrantControls": [
+            "CompliantDevice"
+          ],
+          "enforcedSessionControls": []
+        }
+      ],
+      "authenticationDetails": [
+        {
+          "authenticationStepDateTime": "2026-11-16T08:24:00Z",
+          "authenticationMethod": "Previously satisfied",
+          "succeeded": true,
+          "authenticationStepResultDetail": "MFA requirement satisfied by claim in the token"
+        }
+      ]
+    },
+    {
+      "id": "demo-event-014",
+      "createdDateTime": "2026-11-16T08:26:00Z",
+      "userPrincipalName": "jamie.chen@example.com",
+      "userDisplayName": "Jamie Chen",
+      "userId": "demo-user-jamie.chen",
+      "appId": "demo-app-teams",
+      "appDisplayName": "Microsoft Teams",
+      "resourceDisplayName": "Microsoft Teams Services",
+      "ipAddress": "198.51.100.12",
+      "isInteractive": false,
+      "signInEventTypes": [
+        "nonInteractiveUser"
+      ],
+      "status": {
+        "errorCode": 0,
+        "failureReason": "",
+        "additionalDetails": ""
+      },
+      "conditionalAccessStatus": "success",
+      "correlationId": "demo-correlation-14",
+      "originalRequestId": "demo-request-14",
+      "sessionId": "demo-session-jamie.chen",
+      "deviceDetail": {
+        "deviceId": "demo-device-01",
+        "displayName": "SYNTHETIC-WKS-01",
+        "operatingSystem": "Windows 11",
+        "browser": "",
+        "isCompliant": true,
+        "isManaged": true,
+        "trustType": "Azure AD joined"
+      },
+      "location": {
+        "city": "New York",
+        "countryOrRegion": "US"
+      },
+      "riskLevelDuringSignIn": "none",
+      "riskState": "none",
+      "clientAppUsed": "Mobile Apps and Desktop clients",
+      "authenticationRequirement": "multiFactorAuthentication",
+      "appliedConditionalAccessPolicies": [
+        {
+          "id": "demo-ca-01",
+          "displayName": "Require phishing-resistant MFA",
+          "result": "success",
+          "enforcedGrantControls": [
+            "AuthenticationStrength"
+          ],
+          "enforcedSessionControls": []
+        },
+        {
+          "id": "demo-ca-02",
+          "displayName": "Require compliant device",
+          "result": "success",
+          "enforcedGrantControls": [
+            "CompliantDevice"
+          ],
+          "enforcedSessionControls": []
+        }
+      ],
+      "authenticationDetails": [
+        {
+          "authenticationStepDateTime": "2026-11-16T08:26:00Z",
+          "authenticationMethod": "Previously satisfied",
+          "succeeded": true,
+          "authenticationStepResultDetail": "MFA requirement satisfied by claim in the token"
+        }
+      ]
+    },
+    {
+      "id": "demo-event-015",
+      "createdDateTime": "2026-11-16T08:28:00Z",
+      "userPrincipalName": "sam.patel@example.com",
+      "userDisplayName": "Sam Patel",
+      "userId": "demo-user-sam.patel",
+      "appId": "demo-app-teams",
+      "appDisplayName": "Microsoft Teams",
+      "resourceDisplayName": "Microsoft Teams Services",
+      "ipAddress": "203.0.113.8",
+      "isInteractive": false,
+      "signInEventTypes": [
+        "nonInteractiveUser"
+      ],
+      "status": {
+        "errorCode": 0,
+        "failureReason": "",
+        "additionalDetails": ""
+      },
+      "conditionalAccessStatus": "success",
+      "correlationId": "demo-correlation-15",
+      "originalRequestId": "demo-request-15",
+      "sessionId": "demo-session-sam.patel",
+      "deviceDetail": {
+        "deviceId": "demo-device-01",
+        "displayName": "SYNTHETIC-WKS-01",
+        "operatingSystem": "Windows 11",
+        "browser": "",
+        "isCompliant": true,
+        "isManaged": true,
+        "trustType": "Azure AD joined"
+      },
+      "location": {
+        "city": "New York",
+        "countryOrRegion": "US"
+      },
+      "riskLevelDuringSignIn": "none",
+      "riskState": "none",
+      "clientAppUsed": "Mobile Apps and Desktop clients",
+      "authenticationRequirement": "multiFactorAuthentication",
+      "appliedConditionalAccessPolicies": [
+        {
+          "id": "demo-ca-01",
+          "displayName": "Require phishing-resistant MFA",
+          "result": "success",
+          "enforcedGrantControls": [
+            "AuthenticationStrength"
+          ],
+          "enforcedSessionControls": []
+        },
+        {
+          "id": "demo-ca-02",
+          "displayName": "Require compliant device",
+          "result": "success",
+          "enforcedGrantControls": [
+            "CompliantDevice"
+          ],
+          "enforcedSessionControls": []
+        }
+      ],
+      "authenticationDetails": [
+        {
+          "authenticationStepDateTime": "2026-11-16T08:28:00Z",
+          "authenticationMethod": "Previously satisfied",
+          "succeeded": true,
+          "authenticationStepResultDetail": "MFA requirement satisfied by claim in the token"
+        }
+      ]
+    },
+    {
+      "id": "demo-event-016",
+      "createdDateTime": "2026-11-16T08:30:00Z",
+      "userPrincipalName": "alex.morgan@example.com",
+      "userDisplayName": "Alex Morgan",
+      "userId": "demo-user-alex.morgan",
+      "appId": "demo-app-office",
+      "appDisplayName": "Microsoft Office",
+      "resourceDisplayName": "Microsoft Graph",
+      "ipAddress": "192.0.2.24",
+      "isInteractive": false,
+      "signInEventTypes": [
+        "nonInteractiveUser"
+      ],
+      "status": {
+        "errorCode": 0,
+        "failureReason": "",
+        "additionalDetails": ""
+      },
+      "conditionalAccessStatus": "success",
+      "correlationId": "demo-correlation-16",
+      "originalRequestId": "demo-request-16",
+      "sessionId": "demo-session-alex.morgan",
+      "deviceDetail": {
+        "deviceId": "demo-device-01",
+        "displayName": "SYNTHETIC-WKS-01",
+        "operatingSystem": "Windows 11",
+        "browser": "",
+        "isCompliant": true,
+        "isManaged": true,
+        "trustType": "Azure AD joined"
+      },
+      "location": {
+        "city": "New York",
+        "countryOrRegion": "US"
+      },
+      "riskLevelDuringSignIn": "none",
+      "riskState": "none",
+      "clientAppUsed": "Mobile Apps and Desktop clients",
+      "authenticationRequirement": "multiFactorAuthentication",
+      "appliedConditionalAccessPolicies": [
+        {
+          "id": "demo-ca-01",
+          "displayName": "Require phishing-resistant MFA",
+          "result": "success",
+          "enforcedGrantControls": [
+            "AuthenticationStrength"
+          ],
+          "enforcedSessionControls": []
+        },
+        {
+          "id": "demo-ca-02",
+          "displayName": "Require compliant device",
+          "result": "success",
+          "enforcedGrantControls": [
+            "CompliantDevice"
+          ],
+          "enforcedSessionControls": []
+        }
+      ],
+      "authenticationDetails": [
+        {
+          "authenticationStepDateTime": "2026-11-16T08:30:00Z",
+          "authenticationMethod": "Previously satisfied",
+          "succeeded": true,
+          "authenticationStepResultDetail": "MFA requirement satisfied by claim in the token"
+        }
+      ]
+    },
+    {
+      "id": "demo-event-017",
+      "createdDateTime": "2026-11-16T08:32:00Z",
+      "userPrincipalName": "jamie.chen@example.com",
+      "userDisplayName": "Jamie Chen",
+      "userId": "demo-user-jamie.chen",
+      "appId": "demo-app-teams",
+      "appDisplayName": "Microsoft Teams",
+      "resourceDisplayName": "Microsoft Teams Services",
+      "ipAddress": "198.51.100.12",
+      "isInteractive": true,
+      "signInEventTypes": [
+        "interactiveUser"
+      ],
+      "status": {
+        "errorCode": 0,
+        "failureReason": "",
+        "additionalDetails": ""
+      },
+      "conditionalAccessStatus": "success",
+      "correlationId": "demo-correlation-17",
+      "originalRequestId": "demo-request-17",
+      "sessionId": "demo-session-jamie.chen",
+      "deviceDetail": {
+        "deviceId": "demo-device-01",
+        "displayName": "SYNTHETIC-WKS-01",
+        "operatingSystem": "Windows 11",
+        "browser": "Edge 132",
+        "isCompliant": true,
+        "isManaged": true,
+        "trustType": "Azure AD joined"
+      },
+      "location": {
+        "city": "New York",
+        "countryOrRegion": "US"
+      },
+      "riskLevelDuringSignIn": "none",
+      "riskState": "none",
+      "clientAppUsed": "Browser",
+      "authenticationRequirement": "multiFactorAuthentication",
+      "appliedConditionalAccessPolicies": [
+        {
+          "id": "demo-ca-01",
+          "displayName": "Require phishing-resistant MFA",
+          "result": "success",
+          "enforcedGrantControls": [
+            "AuthenticationStrength"
+          ],
+          "enforcedSessionControls": []
+        },
+        {
+          "id": "demo-ca-02",
+          "displayName": "Require compliant device",
+          "result": "success",
+          "enforcedGrantControls": [
+            "CompliantDevice"
+          ],
+          "enforcedSessionControls": []
+        }
+      ],
+      "authenticationDetails": [
+        {
+          "authenticationStepDateTime": "2026-11-16T08:32:00Z",
+          "authenticationMethod": "FIDO2 security key",
+          "succeeded": true,
+          "authenticationStepResultDetail": "MFA completed"
+        }
+      ]
+    },
+    {
+      "id": "demo-event-018",
+      "createdDateTime": "2026-11-16T08:34:00Z",
+      "userPrincipalName": "sam.patel@example.com",
+      "userDisplayName": "Sam Patel",
+      "userId": "demo-user-sam.patel",
+      "appId": "demo-app-teams",
+      "appDisplayName": "Microsoft Teams",
+      "resourceDisplayName": "Microsoft Teams Services",
+      "ipAddress": "203.0.113.8",
+      "isInteractive": false,
+      "signInEventTypes": [
+        "nonInteractiveUser"
+      ],
+      "status": {
+        "errorCode": 0,
+        "failureReason": "",
+        "additionalDetails": ""
+      },
+      "conditionalAccessStatus": "success",
+      "correlationId": "demo-correlation-18",
+      "originalRequestId": "demo-request-18",
+      "sessionId": "demo-session-sam.patel",
+      "deviceDetail": {
+        "deviceId": "demo-device-01",
+        "displayName": "SYNTHETIC-WKS-01",
+        "operatingSystem": "Windows 11",
+        "browser": "",
+        "isCompliant": true,
+        "isManaged": true,
+        "trustType": "Azure AD joined"
+      },
+      "location": {
+        "city": "New York",
+        "countryOrRegion": "US"
+      },
+      "riskLevelDuringSignIn": "none",
+      "riskState": "none",
+      "clientAppUsed": "Mobile Apps and Desktop clients",
+      "authenticationRequirement": "multiFactorAuthentication",
+      "appliedConditionalAccessPolicies": [
+        {
+          "id": "demo-ca-01",
+          "displayName": "Require phishing-resistant MFA",
+          "result": "success",
+          "enforcedGrantControls": [
+            "AuthenticationStrength"
+          ],
+          "enforcedSessionControls": []
+        },
+        {
+          "id": "demo-ca-02",
+          "displayName": "Require compliant device",
+          "result": "success",
+          "enforcedGrantControls": [
+            "CompliantDevice"
+          ],
+          "enforcedSessionControls": []
+        }
+      ],
+      "authenticationDetails": [
+        {
+          "authenticationStepDateTime": "2026-11-16T08:34:00Z",
+          "authenticationMethod": "Previously satisfied",
+          "succeeded": true,
+          "authenticationStepResultDetail": "MFA requirement satisfied by claim in the token"
+        }
+      ]
+    },
+    {
+      "id": "demo-event-019",
+      "createdDateTime": "2026-11-16T08:36:00Z",
+      "userPrincipalName": "alex.morgan@example.com",
+      "userDisplayName": "Alex Morgan",
+      "userId": "demo-user-alex.morgan",
+      "appId": "demo-app-office",
+      "appDisplayName": "Microsoft Office",
+      "resourceDisplayName": "Microsoft Graph",
+      "ipAddress": "192.0.2.24",
+      "isInteractive": false,
+      "signInEventTypes": [
+        "nonInteractiveUser"
+      ],
+      "status": {
+        "errorCode": 0,
+        "failureReason": "",
+        "additionalDetails": ""
+      },
+      "conditionalAccessStatus": "success",
+      "correlationId": "demo-correlation-19",
+      "originalRequestId": "demo-request-19",
+      "sessionId": "demo-session-alex.morgan",
+      "deviceDetail": {
+        "deviceId": "demo-device-01",
+        "displayName": "SYNTHETIC-WKS-01",
+        "operatingSystem": "Windows 11",
+        "browser": "",
+        "isCompliant": true,
+        "isManaged": true,
+        "trustType": "Azure AD joined"
+      },
+      "location": {
+        "city": "New York",
+        "countryOrRegion": "US"
+      },
+      "riskLevelDuringSignIn": "none",
+      "riskState": "none",
+      "clientAppUsed": "Mobile Apps and Desktop clients",
+      "authenticationRequirement": "multiFactorAuthentication",
+      "appliedConditionalAccessPolicies": [
+        {
+          "id": "demo-ca-01",
+          "displayName": "Require phishing-resistant MFA",
+          "result": "success",
+          "enforcedGrantControls": [
+            "AuthenticationStrength"
+          ],
+          "enforcedSessionControls": []
+        },
+        {
+          "id": "demo-ca-02",
+          "displayName": "Require compliant device",
+          "result": "success",
+          "enforcedGrantControls": [
+            "CompliantDevice"
+          ],
+          "enforcedSessionControls": []
+        }
+      ],
+      "authenticationDetails": [
+        {
+          "authenticationStepDateTime": "2026-11-16T08:36:00Z",
+          "authenticationMethod": "Previously satisfied",
+          "succeeded": true,
+          "authenticationStepResultDetail": "MFA requirement satisfied by claim in the token"
+        }
+      ]
+    },
+    {
+      "id": "demo-event-020",
+      "createdDateTime": "2026-11-16T08:38:00Z",
+      "userPrincipalName": "jamie.chen@example.com",
+      "userDisplayName": "Jamie Chen",
+      "userId": "demo-user-jamie.chen",
+      "appId": "demo-app-teams",
+      "appDisplayName": "Microsoft Teams",
+      "resourceDisplayName": "Microsoft Teams Services",
+      "ipAddress": "198.51.100.12",
+      "isInteractive": false,
+      "signInEventTypes": [
+        "nonInteractiveUser"
+      ],
+      "status": {
+        "errorCode": 0,
+        "failureReason": "",
+        "additionalDetails": ""
+      },
+      "conditionalAccessStatus": "success",
+      "correlationId": "demo-correlation-20",
+      "originalRequestId": "demo-request-20",
+      "sessionId": "demo-session-jamie.chen",
+      "deviceDetail": {
+        "deviceId": "demo-device-01",
+        "displayName": "SYNTHETIC-WKS-01",
+        "operatingSystem": "Windows 11",
+        "browser": "",
+        "isCompliant": true,
+        "isManaged": true,
+        "trustType": "Azure AD joined"
+      },
+      "location": {
+        "city": "New York",
+        "countryOrRegion": "US"
+      },
+      "riskLevelDuringSignIn": "none",
+      "riskState": "none",
+      "clientAppUsed": "Mobile Apps and Desktop clients",
+      "authenticationRequirement": "multiFactorAuthentication",
+      "appliedConditionalAccessPolicies": [
+        {
+          "id": "demo-ca-01",
+          "displayName": "Require phishing-resistant MFA",
+          "result": "success",
+          "enforcedGrantControls": [
+            "AuthenticationStrength"
+          ],
+          "enforcedSessionControls": []
+        },
+        {
+          "id": "demo-ca-02",
+          "displayName": "Require compliant device",
+          "result": "success",
+          "enforcedGrantControls": [
+            "CompliantDevice"
+          ],
+          "enforcedSessionControls": []
+        }
+      ],
+      "authenticationDetails": [
+        {
+          "authenticationStepDateTime": "2026-11-16T08:38:00Z",
+          "authenticationMethod": "Previously satisfied",
+          "succeeded": true,
+          "authenticationStepResultDetail": "MFA requirement satisfied by claim in the token"
+        }
+      ]
+    },
+    {
+      "id": "demo-event-021",
+      "createdDateTime": "2026-11-16T08:40:00Z",
+      "userPrincipalName": "sam.patel@example.com",
+      "userDisplayName": "Sam Patel",
+      "userId": "demo-user-sam.patel",
+      "appId": "demo-app-teams",
+      "appDisplayName": "Microsoft Teams",
+      "resourceDisplayName": "Microsoft Teams Services",
+      "ipAddress": "203.0.113.8",
+      "isInteractive": false,
+      "signInEventTypes": [
+        "nonInteractiveUser"
+      ],
+      "status": {
+        "errorCode": 0,
+        "failureReason": "",
+        "additionalDetails": ""
+      },
+      "conditionalAccessStatus": "success",
+      "correlationId": "demo-correlation-21",
+      "originalRequestId": "demo-request-21",
+      "sessionId": "demo-session-sam.patel",
+      "deviceDetail": {
+        "deviceId": "demo-device-01",
+        "displayName": "SYNTHETIC-WKS-01",
+        "operatingSystem": "Windows 11",
+        "browser": "",
+        "isCompliant": true,
+        "isManaged": true,
+        "trustType": "Azure AD joined"
+      },
+      "location": {
+        "city": "New York",
+        "countryOrRegion": "US"
+      },
+      "riskLevelDuringSignIn": "none",
+      "riskState": "none",
+      "clientAppUsed": "Mobile Apps and Desktop clients",
+      "authenticationRequirement": "multiFactorAuthentication",
+      "appliedConditionalAccessPolicies": [
+        {
+          "id": "demo-ca-01",
+          "displayName": "Require phishing-resistant MFA",
+          "result": "success",
+          "enforcedGrantControls": [
+            "AuthenticationStrength"
+          ],
+          "enforcedSessionControls": []
+        },
+        {
+          "id": "demo-ca-02",
+          "displayName": "Require compliant device",
+          "result": "success",
+          "enforcedGrantControls": [
+            "CompliantDevice"
+          ],
+          "enforcedSessionControls": []
+        }
+      ],
+      "authenticationDetails": [
+        {
+          "authenticationStepDateTime": "2026-11-16T08:40:00Z",
+          "authenticationMethod": "Previously satisfied",
+          "succeeded": true,
+          "authenticationStepResultDetail": "MFA requirement satisfied by claim in the token"
+        }
+      ]
+    },
+    {
+      "id": "demo-event-022",
+      "createdDateTime": "2026-11-16T08:42:00Z",
+      "userPrincipalName": "alex.morgan@example.com",
+      "userDisplayName": "Alex Morgan",
+      "userId": "demo-user-alex.morgan",
+      "appId": "demo-app-office",
+      "appDisplayName": "Microsoft Office",
+      "resourceDisplayName": "Microsoft Graph",
+      "ipAddress": "192.0.2.24",
+      "isInteractive": false,
+      "signInEventTypes": [
+        "nonInteractiveUser"
+      ],
+      "status": {
+        "errorCode": 0,
+        "failureReason": "",
+        "additionalDetails": ""
+      },
+      "conditionalAccessStatus": "success",
+      "correlationId": "demo-correlation-22",
+      "originalRequestId": "demo-request-22",
+      "sessionId": "demo-session-alex.morgan",
+      "deviceDetail": {
+        "deviceId": "demo-device-01",
+        "displayName": "SYNTHETIC-WKS-01",
+        "operatingSystem": "Windows 11",
+        "browser": "",
+        "isCompliant": true,
+        "isManaged": true,
+        "trustType": "Azure AD joined"
+      },
+      "location": {
+        "city": "New York",
+        "countryOrRegion": "US"
+      },
+      "riskLevelDuringSignIn": "none",
+      "riskState": "none",
+      "clientAppUsed": "Mobile Apps and Desktop clients",
+      "authenticationRequirement": "multiFactorAuthentication",
+      "appliedConditionalAccessPolicies": [
+        {
+          "id": "demo-ca-01",
+          "displayName": "Require phishing-resistant MFA",
+          "result": "success",
+          "enforcedGrantControls": [
+            "AuthenticationStrength"
+          ],
+          "enforcedSessionControls": []
+        },
+        {
+          "id": "demo-ca-02",
+          "displayName": "Require compliant device",
+          "result": "success",
+          "enforcedGrantControls": [
+            "CompliantDevice"
+          ],
+          "enforcedSessionControls": []
+        }
+      ],
+      "authenticationDetails": [
+        {
+          "authenticationStepDateTime": "2026-11-16T08:42:00Z",
+          "authenticationMethod": "Previously satisfied",
+          "succeeded": true,
+          "authenticationStepResultDetail": "MFA requirement satisfied by claim in the token"
+        }
+      ]
+    },
+    {
+      "id": "demo-event-023",
+      "createdDateTime": "2026-11-16T08:44:00Z",
+      "userPrincipalName": "jamie.chen@example.com",
+      "userDisplayName": "Jamie Chen",
+      "userId": "demo-user-jamie.chen",
+      "appId": "demo-app-teams",
+      "appDisplayName": "Microsoft Teams",
+      "resourceDisplayName": "Microsoft Teams Services",
+      "ipAddress": "198.51.100.12",
+      "isInteractive": false,
+      "signInEventTypes": [
+        "nonInteractiveUser"
+      ],
+      "status": {
+        "errorCode": 0,
+        "failureReason": "",
+        "additionalDetails": ""
+      },
+      "conditionalAccessStatus": "success",
+      "correlationId": "demo-correlation-23",
+      "originalRequestId": "demo-request-23",
+      "sessionId": "demo-session-jamie.chen",
+      "deviceDetail": {
+        "deviceId": "demo-device-01",
+        "displayName": "SYNTHETIC-WKS-01",
+        "operatingSystem": "Windows 11",
+        "browser": "",
+        "isCompliant": true,
+        "isManaged": true,
+        "trustType": "Azure AD joined"
+      },
+      "location": {
+        "city": "New York",
+        "countryOrRegion": "US"
+      },
+      "riskLevelDuringSignIn": "none",
+      "riskState": "none",
+      "clientAppUsed": "Mobile Apps and Desktop clients",
+      "authenticationRequirement": "multiFactorAuthentication",
+      "appliedConditionalAccessPolicies": [
+        {
+          "id": "demo-ca-01",
+          "displayName": "Require phishing-resistant MFA",
+          "result": "success",
+          "enforcedGrantControls": [
+            "AuthenticationStrength"
+          ],
+          "enforcedSessionControls": []
+        },
+        {
+          "id": "demo-ca-02",
+          "displayName": "Require compliant device",
+          "result": "success",
+          "enforcedGrantControls": [
+            "CompliantDevice"
+          ],
+          "enforcedSessionControls": []
+        }
+      ],
+      "authenticationDetails": [
+        {
+          "authenticationStepDateTime": "2026-11-16T08:44:00Z",
+          "authenticationMethod": "Previously satisfied",
+          "succeeded": true,
+          "authenticationStepResultDetail": "MFA requirement satisfied by claim in the token"
+        }
+      ]
+    },
+    {
+      "id": "demo-event-024",
+      "createdDateTime": "2026-11-16T08:46:00Z",
+      "userPrincipalName": "sam.patel@example.com",
+      "userDisplayName": "Sam Patel",
+      "userId": "demo-user-sam.patel",
+      "appId": "demo-app-teams",
+      "appDisplayName": "Microsoft Teams",
+      "resourceDisplayName": "Microsoft Teams Services",
+      "ipAddress": "203.0.113.8",
+      "isInteractive": false,
+      "signInEventTypes": [
+        "nonInteractiveUser"
+      ],
+      "status": {
+        "errorCode": 0,
+        "failureReason": "",
+        "additionalDetails": ""
+      },
+      "conditionalAccessStatus": "success",
+      "correlationId": "demo-correlation-24",
+      "originalRequestId": "demo-request-24",
+      "sessionId": "demo-session-sam.patel",
+      "deviceDetail": {
+        "deviceId": "demo-device-01",
+        "displayName": "SYNTHETIC-WKS-01",
+        "operatingSystem": "Windows 11",
+        "browser": "",
+        "isCompliant": true,
+        "isManaged": true,
+        "trustType": "Azure AD joined"
+      },
+      "location": {
+        "city": "New York",
+        "countryOrRegion": "US"
+      },
+      "riskLevelDuringSignIn": "none",
+      "riskState": "none",
+      "clientAppUsed": "Mobile Apps and Desktop clients",
+      "authenticationRequirement": "multiFactorAuthentication",
+      "appliedConditionalAccessPolicies": [
+        {
+          "id": "demo-ca-01",
+          "displayName": "Require phishing-resistant MFA",
+          "result": "success",
+          "enforcedGrantControls": [
+            "AuthenticationStrength"
+          ],
+          "enforcedSessionControls": []
+        },
+        {
+          "id": "demo-ca-02",
+          "displayName": "Require compliant device",
+          "result": "success",
+          "enforcedGrantControls": [
+            "CompliantDevice"
+          ],
+          "enforcedSessionControls": []
+        }
+      ],
+      "authenticationDetails": [
+        {
+          "authenticationStepDateTime": "2026-11-16T08:46:00Z",
+          "authenticationMethod": "Previously satisfied",
+          "succeeded": true,
+          "authenticationStepResultDetail": "MFA requirement satisfied by claim in the token"
+        }
+      ]
+    },
+    {
+      "id": "demo-event-025",
+      "createdDateTime": "2026-11-16T08:48:00Z",
+      "userPrincipalName": "alex.morgan@example.com",
+      "userDisplayName": "Alex Morgan",
+      "userId": "demo-user-alex.morgan",
+      "appId": "demo-app-office",
+      "appDisplayName": "Microsoft Office",
+      "resourceDisplayName": "Microsoft Graph",
+      "ipAddress": "192.0.2.24",
+      "isInteractive": true,
+      "signInEventTypes": [
+        "interactiveUser"
+      ],
+      "status": {
+        "errorCode": 0,
+        "failureReason": "",
+        "additionalDetails": ""
+      },
+      "conditionalAccessStatus": "success",
+      "correlationId": "demo-correlation-25",
+      "originalRequestId": "demo-request-25",
+      "sessionId": "demo-session-alex.morgan",
+      "deviceDetail": {
+        "deviceId": "demo-device-01",
+        "displayName": "SYNTHETIC-WKS-01",
+        "operatingSystem": "Windows 11",
+        "browser": "Edge 132",
+        "isCompliant": true,
+        "isManaged": true,
+        "trustType": "Azure AD joined"
+      },
+      "location": {
+        "city": "New York",
+        "countryOrRegion": "US"
+      },
+      "riskLevelDuringSignIn": "none",
+      "riskState": "none",
+      "clientAppUsed": "Browser",
+      "authenticationRequirement": "multiFactorAuthentication",
+      "appliedConditionalAccessPolicies": [
+        {
+          "id": "demo-ca-01",
+          "displayName": "Require phishing-resistant MFA",
+          "result": "success",
+          "enforcedGrantControls": [
+            "AuthenticationStrength"
+          ],
+          "enforcedSessionControls": []
+        },
+        {
+          "id": "demo-ca-02",
+          "displayName": "Require compliant device",
+          "result": "success",
+          "enforcedGrantControls": [
+            "CompliantDevice"
+          ],
+          "enforcedSessionControls": []
+        }
+      ],
+      "authenticationDetails": [
+        {
+          "authenticationStepDateTime": "2026-11-16T08:48:00Z",
+          "authenticationMethod": "FIDO2 security key",
+          "succeeded": true,
+          "authenticationStepResultDetail": "MFA completed"
+        }
+      ]
+    },
+    {
+      "id": "demo-event-026",
+      "createdDateTime": "2026-11-16T08:50:00Z",
+      "userPrincipalName": "jamie.chen@example.com",
+      "userDisplayName": "Jamie Chen",
+      "userId": "demo-user-jamie.chen",
+      "appId": "demo-app-teams",
+      "appDisplayName": "Microsoft Teams",
+      "resourceDisplayName": "Microsoft Teams Services",
+      "ipAddress": "198.51.100.12",
+      "isInteractive": false,
+      "signInEventTypes": [
+        "nonInteractiveUser"
+      ],
+      "status": {
+        "errorCode": 0,
+        "failureReason": "",
+        "additionalDetails": ""
+      },
+      "conditionalAccessStatus": "success",
+      "correlationId": "demo-correlation-26",
+      "originalRequestId": "demo-request-26",
+      "sessionId": "demo-session-jamie.chen",
+      "deviceDetail": {
+        "deviceId": "demo-device-01",
+        "displayName": "SYNTHETIC-WKS-01",
+        "operatingSystem": "Windows 11",
+        "browser": "",
+        "isCompliant": true,
+        "isManaged": true,
+        "trustType": "Azure AD joined"
+      },
+      "location": {
+        "city": "New York",
+        "countryOrRegion": "US"
+      },
+      "riskLevelDuringSignIn": "none",
+      "riskState": "none",
+      "clientAppUsed": "Mobile Apps and Desktop clients",
+      "authenticationRequirement": "multiFactorAuthentication",
+      "appliedConditionalAccessPolicies": [
+        {
+          "id": "demo-ca-01",
+          "displayName": "Require phishing-resistant MFA",
+          "result": "success",
+          "enforcedGrantControls": [
+            "AuthenticationStrength"
+          ],
+          "enforcedSessionControls": []
+        },
+        {
+          "id": "demo-ca-02",
+          "displayName": "Require compliant device",
+          "result": "success",
+          "enforcedGrantControls": [
+            "CompliantDevice"
+          ],
+          "enforcedSessionControls": []
+        }
+      ],
+      "authenticationDetails": [
+        {
+          "authenticationStepDateTime": "2026-11-16T08:50:00Z",
+          "authenticationMethod": "Previously satisfied",
+          "succeeded": true,
+          "authenticationStepResultDetail": "MFA requirement satisfied by claim in the token"
+        }
+      ]
+    },
+    {
+      "id": "demo-event-027",
+      "createdDateTime": "2026-11-16T08:52:00Z",
+      "userPrincipalName": "sam.patel@example.com",
+      "userDisplayName": "Sam Patel",
+      "userId": "demo-user-sam.patel",
+      "appId": "demo-app-teams",
+      "appDisplayName": "Microsoft Teams",
+      "resourceDisplayName": "Microsoft Teams Services",
+      "ipAddress": "203.0.113.8",
+      "isInteractive": false,
+      "signInEventTypes": [
+        "nonInteractiveUser"
+      ],
+      "status": {
+        "errorCode": 0,
+        "failureReason": "",
+        "additionalDetails": ""
+      },
+      "conditionalAccessStatus": "success",
+      "correlationId": "demo-correlation-27",
+      "originalRequestId": "demo-request-27",
+      "sessionId": "demo-session-sam.patel",
+      "deviceDetail": {
+        "deviceId": "demo-device-01",
+        "displayName": "SYNTHETIC-WKS-01",
+        "operatingSystem": "Windows 11",
+        "browser": "",
+        "isCompliant": true,
+        "isManaged": true,
+        "trustType": "Azure AD joined"
+      },
+      "location": {
+        "city": "New York",
+        "countryOrRegion": "US"
+      },
+      "riskLevelDuringSignIn": "none",
+      "riskState": "none",
+      "clientAppUsed": "Mobile Apps and Desktop clients",
+      "authenticationRequirement": "multiFactorAuthentication",
+      "appliedConditionalAccessPolicies": [
+        {
+          "id": "demo-ca-01",
+          "displayName": "Require phishing-resistant MFA",
+          "result": "success",
+          "enforcedGrantControls": [
+            "AuthenticationStrength"
+          ],
+          "enforcedSessionControls": []
+        },
+        {
+          "id": "demo-ca-02",
+          "displayName": "Require compliant device",
+          "result": "success",
+          "enforcedGrantControls": [
+            "CompliantDevice"
+          ],
+          "enforcedSessionControls": []
+        }
+      ],
+      "authenticationDetails": [
+        {
+          "authenticationStepDateTime": "2026-11-16T08:52:00Z",
+          "authenticationMethod": "Previously satisfied",
+          "succeeded": true,
+          "authenticationStepResultDetail": "MFA requirement satisfied by claim in the token"
+        }
+      ]
+    },
+    {
+      "id": "demo-event-028",
+      "createdDateTime": "2026-11-16T08:54:00Z",
+      "userPrincipalName": "alex.morgan@example.com",
+      "userDisplayName": "Alex Morgan",
+      "userId": "demo-user-alex.morgan",
+      "appId": "demo-app-office",
+      "appDisplayName": "Microsoft Office",
+      "resourceDisplayName": "Microsoft Graph",
+      "ipAddress": "192.0.2.24",
+      "isInteractive": false,
+      "signInEventTypes": [
+        "nonInteractiveUser"
+      ],
+      "status": {
+        "errorCode": 0,
+        "failureReason": "",
+        "additionalDetails": ""
+      },
+      "conditionalAccessStatus": "success",
+      "correlationId": "demo-correlation-28",
+      "originalRequestId": "demo-request-28",
+      "sessionId": "demo-session-alex.morgan",
+      "deviceDetail": {
+        "deviceId": "demo-device-01",
+        "displayName": "SYNTHETIC-WKS-01",
+        "operatingSystem": "Windows 11",
+        "browser": "",
+        "isCompliant": true,
+        "isManaged": true,
+        "trustType": "Azure AD joined"
+      },
+      "location": {
+        "city": "New York",
+        "countryOrRegion": "US"
+      },
+      "riskLevelDuringSignIn": "none",
+      "riskState": "none",
+      "clientAppUsed": "Mobile Apps and Desktop clients",
+      "authenticationRequirement": "multiFactorAuthentication",
+      "appliedConditionalAccessPolicies": [
+        {
+          "id": "demo-ca-01",
+          "displayName": "Require phishing-resistant MFA",
+          "result": "success",
+          "enforcedGrantControls": [
+            "AuthenticationStrength"
+          ],
+          "enforcedSessionControls": []
+        },
+        {
+          "id": "demo-ca-02",
+          "displayName": "Require compliant device",
+          "result": "success",
+          "enforcedGrantControls": [
+            "CompliantDevice"
+          ],
+          "enforcedSessionControls": []
+        }
+      ],
+      "authenticationDetails": [
+        {
+          "authenticationStepDateTime": "2026-11-16T08:54:00Z",
+          "authenticationMethod": "Previously satisfied",
+          "succeeded": true,
+          "authenticationStepResultDetail": "MFA requirement satisfied by claim in the token"
+        }
+      ]
+    },
+    {
+      "id": "demo-event-029",
+      "createdDateTime": "2026-11-16T08:56:00Z",
+      "userPrincipalName": "jamie.chen@example.com",
+      "userDisplayName": "Jamie Chen",
+      "userId": "demo-user-jamie.chen",
+      "appId": "demo-app-teams",
+      "appDisplayName": "Microsoft Teams",
+      "resourceDisplayName": "Microsoft Teams Services",
+      "ipAddress": "198.51.100.12",
+      "isInteractive": false,
+      "signInEventTypes": [
+        "nonInteractiveUser"
+      ],
+      "status": {
+        "errorCode": 0,
+        "failureReason": "",
+        "additionalDetails": ""
+      },
+      "conditionalAccessStatus": "success",
+      "correlationId": "demo-correlation-29",
+      "originalRequestId": "demo-request-29",
+      "sessionId": "demo-session-jamie.chen",
+      "deviceDetail": {
+        "deviceId": "demo-device-01",
+        "displayName": "SYNTHETIC-WKS-01",
+        "operatingSystem": "Windows 11",
+        "browser": "",
+        "isCompliant": true,
+        "isManaged": true,
+        "trustType": "Azure AD joined"
+      },
+      "location": {
+        "city": "New York",
+        "countryOrRegion": "US"
+      },
+      "riskLevelDuringSignIn": "none",
+      "riskState": "none",
+      "clientAppUsed": "Mobile Apps and Desktop clients",
+      "authenticationRequirement": "multiFactorAuthentication",
+      "appliedConditionalAccessPolicies": [
+        {
+          "id": "demo-ca-01",
+          "displayName": "Require phishing-resistant MFA",
+          "result": "success",
+          "enforcedGrantControls": [
+            "AuthenticationStrength"
+          ],
+          "enforcedSessionControls": []
+        },
+        {
+          "id": "demo-ca-02",
+          "displayName": "Require compliant device",
+          "result": "success",
+          "enforcedGrantControls": [
+            "CompliantDevice"
+          ],
+          "enforcedSessionControls": []
+        }
+      ],
+      "authenticationDetails": [
+        {
+          "authenticationStepDateTime": "2026-11-16T08:56:00Z",
+          "authenticationMethod": "Previously satisfied",
+          "succeeded": true,
+          "authenticationStepResultDetail": "MFA requirement satisfied by claim in the token"
+        }
+      ]
+    },
+    {
+      "id": "demo-event-030",
+      "createdDateTime": "2026-11-16T08:58:00Z",
+      "userPrincipalName": "sam.patel@example.com",
+      "userDisplayName": "Sam Patel",
+      "userId": "demo-user-sam.patel",
+      "appId": "demo-app-teams",
+      "appDisplayName": "Microsoft Teams",
+      "resourceDisplayName": "Microsoft Teams Services",
+      "ipAddress": "203.0.113.8",
+      "isInteractive": false,
+      "signInEventTypes": [
+        "nonInteractiveUser"
+      ],
+      "status": {
+        "errorCode": 0,
+        "failureReason": "",
+        "additionalDetails": ""
+      },
+      "conditionalAccessStatus": "success",
+      "correlationId": "demo-correlation-30",
+      "originalRequestId": "demo-request-30",
+      "sessionId": "demo-session-sam.patel",
+      "deviceDetail": {
+        "deviceId": "demo-device-01",
+        "displayName": "SYNTHETIC-WKS-01",
+        "operatingSystem": "Windows 11",
+        "browser": "",
+        "isCompliant": true,
+        "isManaged": true,
+        "trustType": "Azure AD joined"
+      },
+      "location": {
+        "city": "New York",
+        "countryOrRegion": "US"
+      },
+      "riskLevelDuringSignIn": "none",
+      "riskState": "none",
+      "clientAppUsed": "Mobile Apps and Desktop clients",
+      "authenticationRequirement": "multiFactorAuthentication",
+      "appliedConditionalAccessPolicies": [
+        {
+          "id": "demo-ca-01",
+          "displayName": "Require phishing-resistant MFA",
+          "result": "success",
+          "enforcedGrantControls": [
+            "AuthenticationStrength"
+          ],
+          "enforcedSessionControls": []
+        },
+        {
+          "id": "demo-ca-02",
+          "displayName": "Require compliant device",
+          "result": "success",
+          "enforcedGrantControls": [
+            "CompliantDevice"
+          ],
+          "enforcedSessionControls": []
+        }
+      ],
+      "authenticationDetails": [
+        {
+          "authenticationStepDateTime": "2026-11-16T08:58:00Z",
+          "authenticationMethod": "Previously satisfied",
+          "succeeded": true,
+          "authenticationStepResultDetail": "MFA requirement satisfied by claim in the token"
+        }
+      ]
+    },
+    {
+      "id": "demo-event-031",
+      "createdDateTime": "2026-11-16T09:00:00Z",
+      "userPrincipalName": "alex.morgan@example.com",
+      "userDisplayName": "Alex Morgan",
+      "userId": "demo-user-alex.morgan",
+      "appId": "demo-app-office",
+      "appDisplayName": "Microsoft Office",
+      "resourceDisplayName": "Microsoft Graph",
+      "ipAddress": "192.0.2.24",
+      "isInteractive": false,
+      "signInEventTypes": [
+        "nonInteractiveUser"
+      ],
+      "status": {
+        "errorCode": 0,
+        "failureReason": "",
+        "additionalDetails": ""
+      },
+      "conditionalAccessStatus": "success",
+      "correlationId": "demo-correlation-31",
+      "originalRequestId": "demo-request-31",
+      "sessionId": "demo-session-alex.morgan",
+      "deviceDetail": {
+        "deviceId": "demo-device-01",
+        "displayName": "SYNTHETIC-WKS-01",
+        "operatingSystem": "Windows 11",
+        "browser": "",
+        "isCompliant": true,
+        "isManaged": true,
+        "trustType": "Azure AD joined"
+      },
+      "location": {
+        "city": "New York",
+        "countryOrRegion": "US"
+      },
+      "riskLevelDuringSignIn": "none",
+      "riskState": "none",
+      "clientAppUsed": "Mobile Apps and Desktop clients",
+      "authenticationRequirement": "multiFactorAuthentication",
+      "appliedConditionalAccessPolicies": [
+        {
+          "id": "demo-ca-01",
+          "displayName": "Require phishing-resistant MFA",
+          "result": "success",
+          "enforcedGrantControls": [
+            "AuthenticationStrength"
+          ],
+          "enforcedSessionControls": []
+        },
+        {
+          "id": "demo-ca-02",
+          "displayName": "Require compliant device",
+          "result": "success",
+          "enforcedGrantControls": [
+            "CompliantDevice"
+          ],
+          "enforcedSessionControls": []
+        }
+      ],
+      "authenticationDetails": [
+        {
+          "authenticationStepDateTime": "2026-11-16T09:00:00Z",
+          "authenticationMethod": "Previously satisfied",
+          "succeeded": true,
+          "authenticationStepResultDetail": "MFA requirement satisfied by claim in the token"
+        }
+      ]
+    },
+    {
+      "id": "demo-event-032",
+      "createdDateTime": "2026-11-16T09:02:00Z",
+      "userPrincipalName": "jamie.chen@example.com",
+      "userDisplayName": "Jamie Chen",
+      "userId": "demo-user-jamie.chen",
+      "appId": "demo-app-teams",
+      "appDisplayName": "Microsoft Teams",
+      "resourceDisplayName": "Microsoft Teams Services",
+      "ipAddress": "198.51.100.12",
+      "isInteractive": false,
+      "signInEventTypes": [
+        "nonInteractiveUser"
+      ],
+      "status": {
+        "errorCode": 0,
+        "failureReason": "",
+        "additionalDetails": ""
+      },
+      "conditionalAccessStatus": "success",
+      "correlationId": "demo-correlation-32",
+      "originalRequestId": "demo-request-32",
+      "sessionId": "demo-session-jamie.chen",
+      "deviceDetail": {
+        "deviceId": "demo-device-01",
+        "displayName": "SYNTHETIC-WKS-01",
+        "operatingSystem": "Windows 11",
+        "browser": "",
+        "isCompliant": true,
+        "isManaged": true,
+        "trustType": "Azure AD joined"
+      },
+      "location": {
+        "city": "New York",
+        "countryOrRegion": "US"
+      },
+      "riskLevelDuringSignIn": "none",
+      "riskState": "none",
+      "clientAppUsed": "Mobile Apps and Desktop clients",
+      "authenticationRequirement": "multiFactorAuthentication",
+      "appliedConditionalAccessPolicies": [
+        {
+          "id": "demo-ca-01",
+          "displayName": "Require phishing-resistant MFA",
+          "result": "success",
+          "enforcedGrantControls": [
+            "AuthenticationStrength"
+          ],
+          "enforcedSessionControls": []
+        },
+        {
+          "id": "demo-ca-02",
+          "displayName": "Require compliant device",
+          "result": "success",
+          "enforcedGrantControls": [
+            "CompliantDevice"
+          ],
+          "enforcedSessionControls": []
+        }
+      ],
+      "authenticationDetails": [
+        {
+          "authenticationStepDateTime": "2026-11-16T09:02:00Z",
+          "authenticationMethod": "Previously satisfied",
+          "succeeded": true,
+          "authenticationStepResultDetail": "MFA requirement satisfied by claim in the token"
+        }
+      ]
+    },
+    {
+      "id": "demo-event-033",
+      "createdDateTime": "2026-11-16T09:04:00Z",
+      "userPrincipalName": "sam.patel@example.com",
+      "userDisplayName": "Sam Patel",
+      "userId": "demo-user-sam.patel",
+      "appId": "demo-app-teams",
+      "appDisplayName": "Microsoft Teams",
+      "resourceDisplayName": "Microsoft Teams Services",
+      "ipAddress": "203.0.113.8",
+      "isInteractive": true,
+      "signInEventTypes": [
+        "interactiveUser"
+      ],
+      "status": {
+        "errorCode": 0,
+        "failureReason": "",
+        "additionalDetails": ""
+      },
+      "conditionalAccessStatus": "success",
+      "correlationId": "demo-correlation-33",
+      "originalRequestId": "demo-request-33",
+      "sessionId": "demo-session-sam.patel",
+      "deviceDetail": {
+        "deviceId": "demo-device-01",
+        "displayName": "SYNTHETIC-WKS-01",
+        "operatingSystem": "Windows 11",
+        "browser": "Edge 132",
+        "isCompliant": true,
+        "isManaged": true,
+        "trustType": "Azure AD joined"
+      },
+      "location": {
+        "city": "New York",
+        "countryOrRegion": "US"
+      },
+      "riskLevelDuringSignIn": "none",
+      "riskState": "none",
+      "clientAppUsed": "Browser",
+      "authenticationRequirement": "multiFactorAuthentication",
+      "appliedConditionalAccessPolicies": [
+        {
+          "id": "demo-ca-01",
+          "displayName": "Require phishing-resistant MFA",
+          "result": "success",
+          "enforcedGrantControls": [
+            "AuthenticationStrength"
+          ],
+          "enforcedSessionControls": []
+        },
+        {
+          "id": "demo-ca-02",
+          "displayName": "Require compliant device",
+          "result": "success",
+          "enforcedGrantControls": [
+            "CompliantDevice"
+          ],
+          "enforcedSessionControls": []
+        }
+      ],
+      "authenticationDetails": [
+        {
+          "authenticationStepDateTime": "2026-11-16T09:04:00Z",
+          "authenticationMethod": "FIDO2 security key",
+          "succeeded": true,
+          "authenticationStepResultDetail": "MFA completed"
+        }
+      ]
+    },
+    {
+      "id": "demo-event-034",
+      "createdDateTime": "2026-11-16T09:06:00Z",
+      "userPrincipalName": "alex.morgan@example.com",
+      "userDisplayName": "Alex Morgan",
+      "userId": "demo-user-alex.morgan",
+      "appId": "demo-app-office",
+      "appDisplayName": "Microsoft Office",
+      "resourceDisplayName": "Microsoft Graph",
+      "ipAddress": "192.0.2.24",
+      "isInteractive": false,
+      "signInEventTypes": [
+        "nonInteractiveUser"
+      ],
+      "status": {
+        "errorCode": 0,
+        "failureReason": "",
+        "additionalDetails": ""
+      },
+      "conditionalAccessStatus": "success",
+      "correlationId": "demo-correlation-34",
+      "originalRequestId": "demo-request-34",
+      "sessionId": "demo-session-alex.morgan",
+      "deviceDetail": {
+        "deviceId": "demo-device-01",
+        "displayName": "SYNTHETIC-WKS-01",
+        "operatingSystem": "Windows 11",
+        "browser": "",
+        "isCompliant": true,
+        "isManaged": true,
+        "trustType": "Azure AD joined"
+      },
+      "location": {
+        "city": "New York",
+        "countryOrRegion": "US"
+      },
+      "riskLevelDuringSignIn": "none",
+      "riskState": "none",
+      "clientAppUsed": "Mobile Apps and Desktop clients",
+      "authenticationRequirement": "multiFactorAuthentication",
+      "appliedConditionalAccessPolicies": [
+        {
+          "id": "demo-ca-01",
+          "displayName": "Require phishing-resistant MFA",
+          "result": "success",
+          "enforcedGrantControls": [
+            "AuthenticationStrength"
+          ],
+          "enforcedSessionControls": []
+        },
+        {
+          "id": "demo-ca-02",
+          "displayName": "Require compliant device",
+          "result": "success",
+          "enforcedGrantControls": [
+            "CompliantDevice"
+          ],
+          "enforcedSessionControls": []
+        }
+      ],
+      "authenticationDetails": [
+        {
+          "authenticationStepDateTime": "2026-11-16T09:06:00Z",
+          "authenticationMethod": "Previously satisfied",
+          "succeeded": true,
+          "authenticationStepResultDetail": "MFA requirement satisfied by claim in the token"
+        }
+      ]
+    },
+    {
+      "id": "demo-event-035",
+      "createdDateTime": "2026-11-16T09:08:00Z",
+      "userPrincipalName": "jamie.chen@example.com",
+      "userDisplayName": "Jamie Chen",
+      "userId": "demo-user-jamie.chen",
+      "appId": "demo-app-teams",
+      "appDisplayName": "Microsoft Teams",
+      "resourceDisplayName": "Microsoft Teams Services",
+      "ipAddress": "198.51.100.12",
+      "isInteractive": false,
+      "signInEventTypes": [
+        "nonInteractiveUser"
+      ],
+      "status": {
+        "errorCode": 0,
+        "failureReason": "",
+        "additionalDetails": ""
+      },
+      "conditionalAccessStatus": "success",
+      "correlationId": "demo-correlation-35",
+      "originalRequestId": "demo-request-35",
+      "sessionId": "demo-session-jamie.chen",
+      "deviceDetail": {
+        "deviceId": "demo-device-01",
+        "displayName": "SYNTHETIC-WKS-01",
+        "operatingSystem": "Windows 11",
+        "browser": "",
+        "isCompliant": true,
+        "isManaged": true,
+        "trustType": "Azure AD joined"
+      },
+      "location": {
+        "city": "New York",
+        "countryOrRegion": "US"
+      },
+      "riskLevelDuringSignIn": "none",
+      "riskState": "none",
+      "clientAppUsed": "Mobile Apps and Desktop clients",
+      "authenticationRequirement": "multiFactorAuthentication",
+      "appliedConditionalAccessPolicies": [
+        {
+          "id": "demo-ca-01",
+          "displayName": "Require phishing-resistant MFA",
+          "result": "success",
+          "enforcedGrantControls": [
+            "AuthenticationStrength"
+          ],
+          "enforcedSessionControls": []
+        },
+        {
+          "id": "demo-ca-02",
+          "displayName": "Require compliant device",
+          "result": "success",
+          "enforcedGrantControls": [
+            "CompliantDevice"
+          ],
+          "enforcedSessionControls": []
+        }
+      ],
+      "authenticationDetails": [
+        {
+          "authenticationStepDateTime": "2026-11-16T09:08:00Z",
+          "authenticationMethod": "Previously satisfied",
+          "succeeded": true,
+          "authenticationStepResultDetail": "MFA requirement satisfied by claim in the token"
+        }
+      ]
+    },
+    {
+      "id": "demo-event-036",
+      "createdDateTime": "2026-11-16T09:10:00Z",
+      "userPrincipalName": "sam.patel@example.com",
+      "userDisplayName": "Sam Patel",
+      "userId": "demo-user-sam.patel",
+      "appId": "demo-app-teams",
+      "appDisplayName": "Microsoft Teams",
+      "resourceDisplayName": "Microsoft Teams Services",
+      "ipAddress": "203.0.113.8",
+      "isInteractive": false,
+      "signInEventTypes": [
+        "nonInteractiveUser"
+      ],
+      "status": {
+        "errorCode": 0,
+        "failureReason": "",
+        "additionalDetails": ""
+      },
+      "conditionalAccessStatus": "success",
+      "correlationId": "demo-correlation-36",
+      "originalRequestId": "demo-request-36",
+      "sessionId": "demo-session-sam.patel",
+      "deviceDetail": {
+        "deviceId": "demo-device-01",
+        "displayName": "SYNTHETIC-WKS-01",
+        "operatingSystem": "Windows 11",
+        "browser": "",
+        "isCompliant": true,
+        "isManaged": true,
+        "trustType": "Azure AD joined"
+      },
+      "location": {
+        "city": "New York",
+        "countryOrRegion": "US"
+      },
+      "riskLevelDuringSignIn": "none",
+      "riskState": "none",
+      "clientAppUsed": "Mobile Apps and Desktop clients",
+      "authenticationRequirement": "multiFactorAuthentication",
+      "appliedConditionalAccessPolicies": [
+        {
+          "id": "demo-ca-01",
+          "displayName": "Require phishing-resistant MFA",
+          "result": "success",
+          "enforcedGrantControls": [
+            "AuthenticationStrength"
+          ],
+          "enforcedSessionControls": []
+        },
+        {
+          "id": "demo-ca-02",
+          "displayName": "Require compliant device",
+          "result": "success",
+          "enforcedGrantControls": [
+            "CompliantDevice"
+          ],
+          "enforcedSessionControls": []
+        }
+      ],
+      "authenticationDetails": [
+        {
+          "authenticationStepDateTime": "2026-11-16T09:10:00Z",
+          "authenticationMethod": "Previously satisfied",
+          "succeeded": true,
+          "authenticationStepResultDetail": "MFA requirement satisfied by claim in the token"
+        }
+      ]
+    },
+    {
+      "id": "demo-event-037",
+      "createdDateTime": "2026-11-16T09:38:04Z",
+      "userPrincipalName": "alex.morgan@example.com",
+      "userDisplayName": "Alex Morgan",
+      "userId": "demo-user-alex.morgan",
+      "appId": "demo-app-office",
+      "appDisplayName": "Microsoft Office",
+      "resourceDisplayName": "Microsoft Graph",
+      "ipAddress": "192.0.2.24",
+      "isInteractive": true,
+      "signInEventTypes": [
+        "interactiveUser"
+      ],
+      "status": {
+        "errorCode": 0,
+        "failureReason": "",
+        "additionalDetails": ""
+      },
+      "conditionalAccessStatus": "success",
+      "correlationId": "demo-correlation-37",
+      "originalRequestId": "demo-event-037",
+      "sessionId": "demo-session-incident",
+      "deviceDetail": {
+        "deviceId": "demo-device-01",
+        "displayName": "SYNTHETIC-WKS-01",
+        "operatingSystem": "Windows 11",
+        "browser": "Edge 132",
+        "isCompliant": true,
+        "isManaged": true,
+        "trustType": "Azure AD joined"
+      },
+      "location": {
+        "city": "New York",
+        "countryOrRegion": "US"
+      },
+      "riskLevelDuringSignIn": "none",
+      "riskState": "none",
+      "clientAppUsed": "Browser",
+      "authenticationRequirement": "multiFactorAuthentication",
+      "appliedConditionalAccessPolicies": [
+        {
+          "id": "demo-ca-01",
+          "displayName": "Require phishing-resistant MFA",
+          "result": "success",
+          "enforcedGrantControls": [
+            "AuthenticationStrength"
+          ],
+          "enforcedSessionControls": []
+        },
+        {
+          "id": "demo-ca-02",
+          "displayName": "Require compliant device",
+          "result": "success",
+          "enforcedGrantControls": [
+            "CompliantDevice"
+          ],
+          "enforcedSessionControls": []
+        }
+      ],
+      "authenticationDetails": [
+        {
+          "authenticationStepDateTime": "2026-11-16T09:38:04Z",
+          "authenticationMethod": "FIDO2 security key",
+          "succeeded": true,
+          "authenticationStepResultDetail": "MFA completed"
+        }
+      ]
+    },
+    {
+      "id": "demo-event-038",
+      "createdDateTime": "2026-11-16T09:40:00Z",
+      "userPrincipalName": "alex.morgan@example.com",
+      "userDisplayName": "Alex Morgan",
+      "userId": "demo-user-alex.morgan",
+      "appId": "demo-app-office",
+      "appDisplayName": "Microsoft Office",
+      "resourceDisplayName": "Microsoft Graph",
+      "ipAddress": "192.0.2.24",
+      "isInteractive": false,
+      "signInEventTypes": [
+        "nonInteractiveUser"
+      ],
+      "status": {
+        "errorCode": 53000,
+        "failureReason": "Device is not in required device state: compliant.",
+        "additionalDetails": "Synthetic example: device compliance grant control failed."
+      },
+      "conditionalAccessStatus": "failure",
+      "correlationId": "demo-correlation-38",
+      "originalRequestId": "demo-event-037",
+      "sessionId": "demo-session-incident",
+      "deviceDetail": {
+        "deviceId": "demo-device-01",
+        "displayName": "SYNTHETIC-WKS-01",
+        "operatingSystem": "Windows 11",
+        "browser": "",
+        "isCompliant": false,
+        "isManaged": true,
+        "trustType": "Azure AD joined"
+      },
+      "location": {
+        "city": "New York",
+        "countryOrRegion": "US"
+      },
+      "riskLevelDuringSignIn": "none",
+      "riskState": "none",
+      "clientAppUsed": "Mobile Apps and Desktop clients",
+      "authenticationRequirement": "multiFactorAuthentication",
+      "appliedConditionalAccessPolicies": [
+        {
+          "id": "demo-ca-01",
+          "displayName": "Require phishing-resistant MFA",
+          "result": "success",
+          "enforcedGrantControls": [
+            "AuthenticationStrength"
+          ],
+          "enforcedSessionControls": []
+        },
+        {
+          "id": "demo-ca-02",
+          "displayName": "Require compliant device",
+          "result": "failure",
+          "enforcedGrantControls": [
+            "CompliantDevice"
+          ],
+          "enforcedSessionControls": []
+        },
+        {
+          "id": "demo-ca-03",
+          "displayName": "Pilot: trusted networks",
+          "result": "reportOnlyFailure",
+          "enforcedGrantControls": [
+            "Block"
+          ],
+          "enforcedSessionControls": []
+        }
+      ],
+      "authenticationDetails": [
+        {
+          "authenticationStepDateTime": "2026-11-16T09:40:00Z",
+          "authenticationMethod": "Previously satisfied",
+          "succeeded": true,
+          "authenticationStepResultDetail": "MFA requirement satisfied by claim in the token"
+        }
+      ]
+    },
+    {
+      "id": "demo-event-039",
+      "createdDateTime": "2026-11-16T09:40:12Z",
+      "userPrincipalName": "alex.morgan@example.com",
+      "userDisplayName": "Alex Morgan",
+      "userId": "demo-user-alex.morgan",
+      "appId": "demo-app-office",
+      "appDisplayName": "Microsoft Office",
+      "resourceDisplayName": "Office 365 Exchange Online",
+      "ipAddress": "192.0.2.24",
+      "isInteractive": false,
+      "signInEventTypes": [
+        "nonInteractiveUser"
+      ],
+      "status": {
+        "errorCode": 53000,
+        "failureReason": "Device is not in required device state: compliant.",
+        "additionalDetails": "Synthetic example: device compliance grant control failed."
+      },
+      "conditionalAccessStatus": "failure",
+      "correlationId": "demo-correlation-39",
+      "originalRequestId": "demo-event-037",
+      "sessionId": "demo-session-incident",
+      "deviceDetail": {
+        "deviceId": "demo-device-01",
+        "displayName": "SYNTHETIC-WKS-01",
+        "operatingSystem": "Windows 11",
+        "browser": "",
+        "isCompliant": false,
+        "isManaged": true,
+        "trustType": "Azure AD joined"
+      },
+      "location": {
+        "city": "New York",
+        "countryOrRegion": "US"
+      },
+      "riskLevelDuringSignIn": "none",
+      "riskState": "none",
+      "clientAppUsed": "Mobile Apps and Desktop clients",
+      "authenticationRequirement": "multiFactorAuthentication",
+      "appliedConditionalAccessPolicies": [
+        {
+          "id": "demo-ca-01",
+          "displayName": "Require phishing-resistant MFA",
+          "result": "success",
+          "enforcedGrantControls": [
+            "AuthenticationStrength"
+          ],
+          "enforcedSessionControls": []
+        },
+        {
+          "id": "demo-ca-02",
+          "displayName": "Require compliant device",
+          "result": "failure",
+          "enforcedGrantControls": [
+            "CompliantDevice"
+          ],
+          "enforcedSessionControls": []
+        },
+        {
+          "id": "demo-ca-03",
+          "displayName": "Pilot: trusted networks",
+          "result": "reportOnlyFailure",
+          "enforcedGrantControls": [
+            "Block"
+          ],
+          "enforcedSessionControls": []
+        }
+      ],
+      "authenticationDetails": [
+        {
+          "authenticationStepDateTime": "2026-11-16T09:40:12Z",
+          "authenticationMethod": "Previously satisfied",
+          "succeeded": true,
+          "authenticationStepResultDetail": "MFA requirement satisfied by claim in the token"
+        }
+      ]
+    },
+    {
+      "id": "demo-event-040",
+      "createdDateTime": "2026-11-16T09:40:24Z",
+      "userPrincipalName": "alex.morgan@example.com",
+      "userDisplayName": "Alex Morgan",
+      "userId": "demo-user-alex.morgan",
+      "appId": "demo-app-office",
+      "appDisplayName": "Microsoft Office",
+      "resourceDisplayName": "Microsoft Graph",
+      "ipAddress": "192.0.2.24",
+      "isInteractive": false,
+      "signInEventTypes": [
+        "nonInteractiveUser"
+      ],
+      "status": {
+        "errorCode": 53000,
+        "failureReason": "Device is not in required device state: compliant.",
+        "additionalDetails": "Synthetic example: device compliance grant control failed."
+      },
+      "conditionalAccessStatus": "failure",
+      "correlationId": "demo-correlation-40",
+      "originalRequestId": "demo-event-037",
+      "sessionId": "demo-session-incident",
+      "deviceDetail": {
+        "deviceId": "demo-device-01",
+        "displayName": "SYNTHETIC-WKS-01",
+        "operatingSystem": "Windows 11",
+        "browser": "",
+        "isCompliant": false,
+        "isManaged": true,
+        "trustType": "Azure AD joined"
+      },
+      "location": {
+        "city": "New York",
+        "countryOrRegion": "US"
+      },
+      "riskLevelDuringSignIn": "none",
+      "riskState": "none",
+      "clientAppUsed": "Mobile Apps and Desktop clients",
+      "authenticationRequirement": "multiFactorAuthentication",
+      "appliedConditionalAccessPolicies": [
+        {
+          "id": "demo-ca-01",
+          "displayName": "Require phishing-resistant MFA",
+          "result": "success",
+          "enforcedGrantControls": [
+            "AuthenticationStrength"
+          ],
+          "enforcedSessionControls": []
+        },
+        {
+          "id": "demo-ca-02",
+          "displayName": "Require compliant device",
+          "result": "failure",
+          "enforcedGrantControls": [
+            "CompliantDevice"
+          ],
+          "enforcedSessionControls": []
+        },
+        {
+          "id": "demo-ca-03",
+          "displayName": "Pilot: trusted networks",
+          "result": "reportOnlyFailure",
+          "enforcedGrantControls": [
+            "Block"
+          ],
+          "enforcedSessionControls": []
+        }
+      ],
+      "authenticationDetails": [
+        {
+          "authenticationStepDateTime": "2026-11-16T09:40:24Z",
+          "authenticationMethod": "Previously satisfied",
+          "succeeded": true,
+          "authenticationStepResultDetail": "MFA requirement satisfied by claim in the token"
+        }
+      ]
+    },
+    {
+      "id": "demo-event-041",
+      "createdDateTime": "2026-11-16T09:40:36Z",
+      "userPrincipalName": "alex.morgan@example.com",
+      "userDisplayName": "Alex Morgan",
+      "userId": "demo-user-alex.morgan",
+      "appId": "demo-app-office",
+      "appDisplayName": "Microsoft Office",
+      "resourceDisplayName": "Office 365 Exchange Online",
+      "ipAddress": "192.0.2.24",
+      "isInteractive": false,
+      "signInEventTypes": [
+        "nonInteractiveUser"
+      ],
+      "status": {
+        "errorCode": 53000,
+        "failureReason": "Device is not in required device state: compliant.",
+        "additionalDetails": "Synthetic example: device compliance grant control failed."
+      },
+      "conditionalAccessStatus": "failure",
+      "correlationId": "demo-correlation-41",
+      "originalRequestId": "demo-event-037",
+      "sessionId": "demo-session-incident",
+      "deviceDetail": {
+        "deviceId": "demo-device-01",
+        "displayName": "SYNTHETIC-WKS-01",
+        "operatingSystem": "Windows 11",
+        "browser": "",
+        "isCompliant": false,
+        "isManaged": true,
+        "trustType": "Azure AD joined"
+      },
+      "location": {
+        "city": "New York",
+        "countryOrRegion": "US"
+      },
+      "riskLevelDuringSignIn": "none",
+      "riskState": "none",
+      "clientAppUsed": "Mobile Apps and Desktop clients",
+      "authenticationRequirement": "multiFactorAuthentication",
+      "appliedConditionalAccessPolicies": [
+        {
+          "id": "demo-ca-01",
+          "displayName": "Require phishing-resistant MFA",
+          "result": "success",
+          "enforcedGrantControls": [
+            "AuthenticationStrength"
+          ],
+          "enforcedSessionControls": []
+        },
+        {
+          "id": "demo-ca-02",
+          "displayName": "Require compliant device",
+          "result": "failure",
+          "enforcedGrantControls": [
+            "CompliantDevice"
+          ],
+          "enforcedSessionControls": []
+        },
+        {
+          "id": "demo-ca-03",
+          "displayName": "Pilot: trusted networks",
+          "result": "reportOnlyFailure",
+          "enforcedGrantControls": [
+            "Block"
+          ],
+          "enforcedSessionControls": []
+        }
+      ],
+      "authenticationDetails": [
+        {
+          "authenticationStepDateTime": "2026-11-16T09:40:36Z",
+          "authenticationMethod": "Previously satisfied",
+          "succeeded": true,
+          "authenticationStepResultDetail": "MFA requirement satisfied by claim in the token"
+        }
+      ]
+    },
+    {
+      "id": "demo-event-042",
+      "createdDateTime": "2026-11-16T09:41:00Z",
+      "userPrincipalName": "alex.morgan@example.com",
+      "userDisplayName": "Alex Morgan",
+      "userId": "demo-user-alex.morgan",
+      "appId": "demo-app-office",
+      "appDisplayName": "Microsoft Office",
+      "resourceDisplayName": "Microsoft Graph",
+      "ipAddress": "192.0.2.24",
+      "isInteractive": false,
+      "signInEventTypes": [
+        "nonInteractiveUser"
+      ],
+      "status": {
+        "errorCode": 53000,
+        "failureReason": "Device is not in required device state: compliant.",
+        "additionalDetails": "Synthetic example: device compliance grant control failed."
+      },
+      "conditionalAccessStatus": "failure",
+      "correlationId": "demo-correlation-42",
+      "originalRequestId": "demo-event-037",
+      "sessionId": "demo-session-incident",
+      "deviceDetail": {
+        "deviceId": "demo-device-01",
+        "displayName": "SYNTHETIC-WKS-01",
+        "operatingSystem": "Windows 11",
+        "browser": "",
+        "isCompliant": false,
+        "isManaged": true,
+        "trustType": "Azure AD joined"
+      },
+      "location": {
+        "city": "New York",
+        "countryOrRegion": "US"
+      },
+      "riskLevelDuringSignIn": "none",
+      "riskState": "none",
+      "clientAppUsed": "Mobile Apps and Desktop clients",
+      "authenticationRequirement": "multiFactorAuthentication",
+      "appliedConditionalAccessPolicies": [
+        {
+          "id": "demo-ca-01",
+          "displayName": "Require phishing-resistant MFA",
+          "result": "success",
+          "enforcedGrantControls": [
+            "AuthenticationStrength"
+          ],
+          "enforcedSessionControls": []
+        },
+        {
+          "id": "demo-ca-02",
+          "displayName": "Require compliant device",
+          "result": "failure",
+          "enforcedGrantControls": [
+            "CompliantDevice"
+          ],
+          "enforcedSessionControls": []
+        },
+        {
+          "id": "demo-ca-03",
+          "displayName": "Pilot: trusted networks",
+          "result": "reportOnlyFailure",
+          "enforcedGrantControls": [
+            "Block"
+          ],
+          "enforcedSessionControls": []
+        }
+      ],
+      "authenticationDetails": [
+        {
+          "authenticationStepDateTime": "2026-11-16T09:41:00Z",
+          "authenticationMethod": "Previously satisfied",
+          "succeeded": true,
+          "authenticationStepResultDetail": "MFA requirement satisfied by claim in the token"
+        }
+      ]
+    },
+    {
+      "id": "demo-event-043",
+      "createdDateTime": "2026-11-16T09:41:12Z",
+      "userPrincipalName": "alex.morgan@example.com",
+      "userDisplayName": "Alex Morgan",
+      "userId": "demo-user-alex.morgan",
+      "appId": "demo-app-office",
+      "appDisplayName": "Microsoft Office",
+      "resourceDisplayName": "Office 365 Exchange Online",
+      "ipAddress": "192.0.2.24",
+      "isInteractive": false,
+      "signInEventTypes": [
+        "nonInteractiveUser"
+      ],
+      "status": {
+        "errorCode": 53000,
+        "failureReason": "Device is not in required device state: compliant.",
+        "additionalDetails": "Synthetic example: device compliance grant control failed."
+      },
+      "conditionalAccessStatus": "failure",
+      "correlationId": "demo-correlation-43",
+      "originalRequestId": "demo-event-037",
+      "sessionId": "demo-session-incident",
+      "deviceDetail": {
+        "deviceId": "demo-device-01",
+        "displayName": "SYNTHETIC-WKS-01",
+        "operatingSystem": "Windows 11",
+        "browser": "",
+        "isCompliant": false,
+        "isManaged": true,
+        "trustType": "Azure AD joined"
+      },
+      "location": {
+        "city": "New York",
+        "countryOrRegion": "US"
+      },
+      "riskLevelDuringSignIn": "none",
+      "riskState": "none",
+      "clientAppUsed": "Mobile Apps and Desktop clients",
+      "authenticationRequirement": "multiFactorAuthentication",
+      "appliedConditionalAccessPolicies": [
+        {
+          "id": "demo-ca-01",
+          "displayName": "Require phishing-resistant MFA",
+          "result": "success",
+          "enforcedGrantControls": [
+            "AuthenticationStrength"
+          ],
+          "enforcedSessionControls": []
+        },
+        {
+          "id": "demo-ca-02",
+          "displayName": "Require compliant device",
+          "result": "failure",
+          "enforcedGrantControls": [
+            "CompliantDevice"
+          ],
+          "enforcedSessionControls": []
+        },
+        {
+          "id": "demo-ca-03",
+          "displayName": "Pilot: trusted networks",
+          "result": "reportOnlyFailure",
+          "enforcedGrantControls": [
+            "Block"
+          ],
+          "enforcedSessionControls": []
+        }
+      ],
+      "authenticationDetails": [
+        {
+          "authenticationStepDateTime": "2026-11-16T09:41:12Z",
+          "authenticationMethod": "Previously satisfied",
+          "succeeded": true,
+          "authenticationStepResultDetail": "MFA requirement satisfied by claim in the token"
+        }
+      ]
+    },
+    {
+      "id": "demo-event-044",
+      "createdDateTime": "2026-11-16T09:41:24Z",
+      "userPrincipalName": "alex.morgan@example.com",
+      "userDisplayName": "Alex Morgan",
+      "userId": "demo-user-alex.morgan",
+      "appId": "demo-app-office",
+      "appDisplayName": "Microsoft Office",
+      "resourceDisplayName": "Microsoft Graph",
+      "ipAddress": "192.0.2.24",
+      "isInteractive": false,
+      "signInEventTypes": [
+        "nonInteractiveUser"
+      ],
+      "status": {
+        "errorCode": 53000,
+        "failureReason": "Device is not in required device state: compliant.",
+        "additionalDetails": "Synthetic example: device compliance grant control failed."
+      },
+      "conditionalAccessStatus": "failure",
+      "correlationId": "demo-correlation-44",
+      "originalRequestId": "demo-event-037",
+      "sessionId": "demo-session-incident",
+      "deviceDetail": {
+        "deviceId": "demo-device-01",
+        "displayName": "SYNTHETIC-WKS-01",
+        "operatingSystem": "Windows 11",
+        "browser": "",
+        "isCompliant": false,
+        "isManaged": true,
+        "trustType": "Azure AD joined"
+      },
+      "location": {
+        "city": "New York",
+        "countryOrRegion": "US"
+      },
+      "riskLevelDuringSignIn": "none",
+      "riskState": "none",
+      "clientAppUsed": "Mobile Apps and Desktop clients",
+      "authenticationRequirement": "multiFactorAuthentication",
+      "appliedConditionalAccessPolicies": [
+        {
+          "id": "demo-ca-01",
+          "displayName": "Require phishing-resistant MFA",
+          "result": "success",
+          "enforcedGrantControls": [
+            "AuthenticationStrength"
+          ],
+          "enforcedSessionControls": []
+        },
+        {
+          "id": "demo-ca-02",
+          "displayName": "Require compliant device",
+          "result": "failure",
+          "enforcedGrantControls": [
+            "CompliantDevice"
+          ],
+          "enforcedSessionControls": []
+        },
+        {
+          "id": "demo-ca-03",
+          "displayName": "Pilot: trusted networks",
+          "result": "reportOnlyFailure",
+          "enforcedGrantControls": [
+            "Block"
+          ],
+          "enforcedSessionControls": []
+        }
+      ],
+      "authenticationDetails": [
+        {
+          "authenticationStepDateTime": "2026-11-16T09:41:24Z",
+          "authenticationMethod": "Previously satisfied",
+          "succeeded": true,
+          "authenticationStepResultDetail": "MFA requirement satisfied by claim in the token"
+        }
+      ]
+    },
+    {
+      "id": "demo-event-045",
+      "createdDateTime": "2026-11-16T09:41:36Z",
+      "userPrincipalName": "alex.morgan@example.com",
+      "userDisplayName": "Alex Morgan",
+      "userId": "demo-user-alex.morgan",
+      "appId": "demo-app-office",
+      "appDisplayName": "Microsoft Office",
+      "resourceDisplayName": "Office 365 Exchange Online",
+      "ipAddress": "192.0.2.24",
+      "isInteractive": false,
+      "signInEventTypes": [
+        "nonInteractiveUser"
+      ],
+      "status": {
+        "errorCode": 53000,
+        "failureReason": "Device is not in required device state: compliant.",
+        "additionalDetails": "Synthetic example: device compliance grant control failed."
+      },
+      "conditionalAccessStatus": "failure",
+      "correlationId": "demo-correlation-45",
+      "originalRequestId": "demo-event-037",
+      "sessionId": "demo-session-incident",
+      "deviceDetail": {
+        "deviceId": "demo-device-01",
+        "displayName": "SYNTHETIC-WKS-01",
+        "operatingSystem": "Windows 11",
+        "browser": "",
+        "isCompliant": false,
+        "isManaged": true,
+        "trustType": "Azure AD joined"
+      },
+      "location": {
+        "city": "New York",
+        "countryOrRegion": "US"
+      },
+      "riskLevelDuringSignIn": "none",
+      "riskState": "none",
+      "clientAppUsed": "Mobile Apps and Desktop clients",
+      "authenticationRequirement": "multiFactorAuthentication",
+      "appliedConditionalAccessPolicies": [
+        {
+          "id": "demo-ca-01",
+          "displayName": "Require phishing-resistant MFA",
+          "result": "success",
+          "enforcedGrantControls": [
+            "AuthenticationStrength"
+          ],
+          "enforcedSessionControls": []
+        },
+        {
+          "id": "demo-ca-02",
+          "displayName": "Require compliant device",
+          "result": "failure",
+          "enforcedGrantControls": [
+            "CompliantDevice"
+          ],
+          "enforcedSessionControls": []
+        },
+        {
+          "id": "demo-ca-03",
+          "displayName": "Pilot: trusted networks",
+          "result": "reportOnlyFailure",
+          "enforcedGrantControls": [
+            "Block"
+          ],
+          "enforcedSessionControls": []
+        }
+      ],
+      "authenticationDetails": [
+        {
+          "authenticationStepDateTime": "2026-11-16T09:41:36Z",
+          "authenticationMethod": "Previously satisfied",
+          "succeeded": true,
+          "authenticationStepResultDetail": "MFA requirement satisfied by claim in the token"
+        }
+      ]
+    },
+    {
+      "id": "demo-event-046",
+      "createdDateTime": "2026-11-16T09:42:00Z",
+      "userPrincipalName": "alex.morgan@example.com",
+      "userDisplayName": "Alex Morgan",
+      "userId": "demo-user-alex.morgan",
+      "appId": "demo-app-office",
+      "appDisplayName": "Microsoft Office",
+      "resourceDisplayName": "Microsoft Graph",
+      "ipAddress": "192.0.2.24",
+      "isInteractive": false,
+      "signInEventTypes": [
+        "nonInteractiveUser"
+      ],
+      "status": {
+        "errorCode": 53000,
+        "failureReason": "Device is not in required device state: compliant.",
+        "additionalDetails": "Synthetic example: device compliance grant control failed."
+      },
+      "conditionalAccessStatus": "failure",
+      "correlationId": "demo-correlation-46",
+      "originalRequestId": "demo-event-037",
+      "sessionId": "demo-session-incident",
+      "deviceDetail": {
+        "deviceId": "demo-device-01",
+        "displayName": "SYNTHETIC-WKS-01",
+        "operatingSystem": "Windows 11",
+        "browser": "",
+        "isCompliant": false,
+        "isManaged": true,
+        "trustType": "Azure AD joined"
+      },
+      "location": {
+        "city": "New York",
+        "countryOrRegion": "US"
+      },
+      "riskLevelDuringSignIn": "none",
+      "riskState": "none",
+      "clientAppUsed": "Mobile Apps and Desktop clients",
+      "authenticationRequirement": "multiFactorAuthentication",
+      "appliedConditionalAccessPolicies": [
+        {
+          "id": "demo-ca-01",
+          "displayName": "Require phishing-resistant MFA",
+          "result": "success",
+          "enforcedGrantControls": [
+            "AuthenticationStrength"
+          ],
+          "enforcedSessionControls": []
+        },
+        {
+          "id": "demo-ca-02",
+          "displayName": "Require compliant device",
+          "result": "failure",
+          "enforcedGrantControls": [
+            "CompliantDevice"
+          ],
+          "enforcedSessionControls": []
+        },
+        {
+          "id": "demo-ca-03",
+          "displayName": "Pilot: trusted networks",
+          "result": "reportOnlyFailure",
+          "enforcedGrantControls": [
+            "Block"
+          ],
+          "enforcedSessionControls": []
+        }
+      ],
+      "authenticationDetails": [
+        {
+          "authenticationStepDateTime": "2026-11-16T09:42:00Z",
+          "authenticationMethod": "Previously satisfied",
+          "succeeded": true,
+          "authenticationStepResultDetail": "MFA requirement satisfied by claim in the token"
+        }
+      ]
+    },
+    {
+      "id": "demo-event-047",
+      "createdDateTime": "2026-11-16T09:42:12Z",
+      "userPrincipalName": "alex.morgan@example.com",
+      "userDisplayName": "Alex Morgan",
+      "userId": "demo-user-alex.morgan",
+      "appId": "demo-app-office",
+      "appDisplayName": "Microsoft Office",
+      "resourceDisplayName": "Office 365 Exchange Online",
+      "ipAddress": "192.0.2.24",
+      "isInteractive": false,
+      "signInEventTypes": [
+        "nonInteractiveUser"
+      ],
+      "status": {
+        "errorCode": 53000,
+        "failureReason": "Device is not in required device state: compliant.",
+        "additionalDetails": "Synthetic example: device compliance grant control failed."
+      },
+      "conditionalAccessStatus": "failure",
+      "correlationId": "demo-correlation-47",
+      "originalRequestId": "demo-event-037",
+      "sessionId": "demo-session-incident",
+      "deviceDetail": {
+        "deviceId": "demo-device-01",
+        "displayName": "SYNTHETIC-WKS-01",
+        "operatingSystem": "Windows 11",
+        "browser": "",
+        "isCompliant": false,
+        "isManaged": true,
+        "trustType": "Azure AD joined"
+      },
+      "location": {
+        "city": "New York",
+        "countryOrRegion": "US"
+      },
+      "riskLevelDuringSignIn": "none",
+      "riskState": "none",
+      "clientAppUsed": "Mobile Apps and Desktop clients",
+      "authenticationRequirement": "multiFactorAuthentication",
+      "appliedConditionalAccessPolicies": [
+        {
+          "id": "demo-ca-01",
+          "displayName": "Require phishing-resistant MFA",
+          "result": "success",
+          "enforcedGrantControls": [
+            "AuthenticationStrength"
+          ],
+          "enforcedSessionControls": []
+        },
+        {
+          "id": "demo-ca-02",
+          "displayName": "Require compliant device",
+          "result": "failure",
+          "enforcedGrantControls": [
+            "CompliantDevice"
+          ],
+          "enforcedSessionControls": []
+        },
+        {
+          "id": "demo-ca-03",
+          "displayName": "Pilot: trusted networks",
+          "result": "reportOnlyFailure",
+          "enforcedGrantControls": [
+            "Block"
+          ],
+          "enforcedSessionControls": []
+        }
+      ],
+      "authenticationDetails": [
+        {
+          "authenticationStepDateTime": "2026-11-16T09:42:12Z",
+          "authenticationMethod": "Previously satisfied",
+          "succeeded": true,
+          "authenticationStepResultDetail": "MFA requirement satisfied by claim in the token"
+        }
+      ]
+    },
+    {
+      "id": "demo-event-048",
+      "createdDateTime": "2026-11-16T09:42:24Z",
+      "userPrincipalName": "alex.morgan@example.com",
+      "userDisplayName": "Alex Morgan",
+      "userId": "demo-user-alex.morgan",
+      "appId": "demo-app-office",
+      "appDisplayName": "Microsoft Office",
+      "resourceDisplayName": "Microsoft Graph",
+      "ipAddress": "192.0.2.24",
+      "isInteractive": false,
+      "signInEventTypes": [
+        "nonInteractiveUser"
+      ],
+      "status": {
+        "errorCode": 53000,
+        "failureReason": "Device is not in required device state: compliant.",
+        "additionalDetails": "Synthetic example: device compliance grant control failed."
+      },
+      "conditionalAccessStatus": "failure",
+      "correlationId": "demo-correlation-48",
+      "originalRequestId": "demo-event-037",
+      "sessionId": "demo-session-incident",
+      "deviceDetail": {
+        "deviceId": "demo-device-01",
+        "displayName": "SYNTHETIC-WKS-01",
+        "operatingSystem": "Windows 11",
+        "browser": "",
+        "isCompliant": false,
+        "isManaged": true,
+        "trustType": "Azure AD joined"
+      },
+      "location": {
+        "city": "New York",
+        "countryOrRegion": "US"
+      },
+      "riskLevelDuringSignIn": "none",
+      "riskState": "none",
+      "clientAppUsed": "Mobile Apps and Desktop clients",
+      "authenticationRequirement": "multiFactorAuthentication",
+      "appliedConditionalAccessPolicies": [
+        {
+          "id": "demo-ca-01",
+          "displayName": "Require phishing-resistant MFA",
+          "result": "success",
+          "enforcedGrantControls": [
+            "AuthenticationStrength"
+          ],
+          "enforcedSessionControls": []
+        },
+        {
+          "id": "demo-ca-02",
+          "displayName": "Require compliant device",
+          "result": "failure",
+          "enforcedGrantControls": [
+            "CompliantDevice"
+          ],
+          "enforcedSessionControls": []
+        },
+        {
+          "id": "demo-ca-03",
+          "displayName": "Pilot: trusted networks",
+          "result": "reportOnlyFailure",
+          "enforcedGrantControls": [
+            "Block"
+          ],
+          "enforcedSessionControls": []
+        }
+      ],
+      "authenticationDetails": [
+        {
+          "authenticationStepDateTime": "2026-11-16T09:42:24Z",
+          "authenticationMethod": "Previously satisfied",
+          "succeeded": true,
+          "authenticationStepResultDetail": "MFA requirement satisfied by claim in the token"
+        }
+      ]
+    },
+    {
+      "id": "demo-event-049",
+      "createdDateTime": "2026-11-16T09:42:36Z",
+      "userPrincipalName": "alex.morgan@example.com",
+      "userDisplayName": "Alex Morgan",
+      "userId": "demo-user-alex.morgan",
+      "appId": "demo-app-office",
+      "appDisplayName": "Microsoft Office",
+      "resourceDisplayName": "Office 365 Exchange Online",
+      "ipAddress": "192.0.2.24",
+      "isInteractive": false,
+      "signInEventTypes": [
+        "nonInteractiveUser"
+      ],
+      "status": {
+        "errorCode": 53000,
+        "failureReason": "Device is not in required device state: compliant.",
+        "additionalDetails": "Synthetic example: device compliance grant control failed."
+      },
+      "conditionalAccessStatus": "failure",
+      "correlationId": "demo-correlation-49",
+      "originalRequestId": "demo-event-037",
+      "sessionId": "demo-session-incident",
+      "deviceDetail": {
+        "deviceId": "demo-device-01",
+        "displayName": "SYNTHETIC-WKS-01",
+        "operatingSystem": "Windows 11",
+        "browser": "",
+        "isCompliant": false,
+        "isManaged": true,
+        "trustType": "Azure AD joined"
+      },
+      "location": {
+        "city": "New York",
+        "countryOrRegion": "US"
+      },
+      "riskLevelDuringSignIn": "none",
+      "riskState": "none",
+      "clientAppUsed": "Mobile Apps and Desktop clients",
+      "authenticationRequirement": "multiFactorAuthentication",
+      "appliedConditionalAccessPolicies": [
+        {
+          "id": "demo-ca-01",
+          "displayName": "Require phishing-resistant MFA",
+          "result": "success",
+          "enforcedGrantControls": [
+            "AuthenticationStrength"
+          ],
+          "enforcedSessionControls": []
+        },
+        {
+          "id": "demo-ca-02",
+          "displayName": "Require compliant device",
+          "result": "failure",
+          "enforcedGrantControls": [
+            "CompliantDevice"
+          ],
+          "enforcedSessionControls": []
+        },
+        {
+          "id": "demo-ca-03",
+          "displayName": "Pilot: trusted networks",
+          "result": "reportOnlyFailure",
+          "enforcedGrantControls": [
+            "Block"
+          ],
+          "enforcedSessionControls": []
+        }
+      ],
+      "authenticationDetails": [
+        {
+          "authenticationStepDateTime": "2026-11-16T09:42:36Z",
+          "authenticationMethod": "Previously satisfied",
+          "succeeded": true,
+          "authenticationStepResultDetail": "MFA requirement satisfied by claim in the token"
+        }
+      ]
+    },
+    {
+      "id": "demo-event-050",
+      "createdDateTime": "2026-11-16T09:44:05Z",
+      "userPrincipalName": "alex.morgan@example.com",
+      "userDisplayName": "Alex Morgan",
+      "userId": "demo-user-alex.morgan",
+      "appId": "demo-app-office",
+      "appDisplayName": "Microsoft Office",
+      "resourceDisplayName": "Microsoft Graph",
+      "ipAddress": "192.0.2.24",
+      "isInteractive": false,
+      "signInEventTypes": [
+        "nonInteractiveUser"
+      ],
+      "status": {
+        "errorCode": 50126,
+        "failureReason": "Invalid username or password.",
+        "additionalDetails": "Synthetic authentication failure; CA not applied."
+      },
+      "conditionalAccessStatus": "notApplied",
+      "correlationId": "demo-correlation-50",
+      "originalRequestId": "",
+      "sessionId": "",
+      "deviceDetail": {
+        "deviceId": "demo-device-01",
+        "displayName": "SYNTHETIC-WKS-01",
+        "operatingSystem": "Windows 11",
+        "browser": "",
+        "isCompliant": true,
+        "isManaged": true,
+        "trustType": "Azure AD joined"
+      },
+      "location": {
+        "city": "New York",
+        "countryOrRegion": "US"
+      },
+      "riskLevelDuringSignIn": "none",
+      "riskState": "none",
+      "clientAppUsed": "Mobile Apps and Desktop clients",
+      "authenticationRequirement": "multiFactorAuthentication",
+      "appliedConditionalAccessPolicies": [
+        {
+          "id": "demo-ca-02",
+          "displayName": "Require compliant device",
+          "result": "notApplied",
+          "enforcedGrantControls": [
+            "CompliantDevice"
+          ],
+          "enforcedSessionControls": []
+        }
+      ],
+      "authenticationDetails": [
+        {
+          "authenticationStepDateTime": "2026-11-16T09:44:05Z",
+          "authenticationMethod": "Previously satisfied",
+          "succeeded": true,
+          "authenticationStepResultDetail": "MFA requirement satisfied by claim in the token"
+        }
+      ]
+    },
+    {
+      "id": "demo-event-051",
+      "createdDateTime": "2026-11-16T09:45:00Z",
+      "userPrincipalName": "alex.morgan@example.com",
+      "userDisplayName": "Alex Morgan",
+      "userId": "demo-user-alex.morgan",
+      "appId": "demo-app-office",
+      "appDisplayName": "Microsoft Office",
+      "resourceDisplayName": "Microsoft Graph",
+      "ipAddress": "192.0.2.24",
+      "isInteractive": true,
+      "signInEventTypes": [
+        "interactiveUser"
+      ],
+      "status": {
+        "errorCode": 0,
+        "failureReason": "",
+        "additionalDetails": ""
+      },
+      "conditionalAccessStatus": "success",
+      "correlationId": "demo-correlation-51",
+      "originalRequestId": "demo-request-51",
+      "sessionId": "demo-session-recovery",
+      "deviceDetail": {
+        "deviceId": "demo-device-01",
+        "displayName": "SYNTHETIC-WKS-01",
+        "operatingSystem": "Windows 11",
+        "browser": "Edge 132",
+        "isCompliant": true,
+        "isManaged": true,
+        "trustType": "Azure AD joined"
+      },
+      "location": {
+        "city": "New York",
+        "countryOrRegion": "US"
+      },
+      "riskLevelDuringSignIn": "none",
+      "riskState": "none",
+      "clientAppUsed": "Browser",
+      "authenticationRequirement": "multiFactorAuthentication",
+      "appliedConditionalAccessPolicies": [
+        {
+          "id": "demo-ca-01",
+          "displayName": "Require phishing-resistant MFA",
+          "result": "success",
+          "enforcedGrantControls": [
+            "AuthenticationStrength"
+          ],
+          "enforcedSessionControls": []
+        },
+        {
+          "id": "demo-ca-02",
+          "displayName": "Require compliant device",
+          "result": "success",
+          "enforcedGrantControls": [
+            "CompliantDevice"
+          ],
+          "enforcedSessionControls": []
+        },
+        {
+          "id": "demo-ca-03",
+          "displayName": "Pilot: trusted networks",
+          "result": "reportOnlyFailure",
+          "enforcedGrantControls": [
+            "Block"
+          ],
+          "enforcedSessionControls": []
+        }
+      ],
+      "authenticationDetails": [
+        {
+          "authenticationStepDateTime": "2026-11-16T09:45:00Z",
+          "authenticationMethod": "FIDO2 security key",
+          "succeeded": true,
+          "authenticationStepResultDetail": "MFA completed"
+        }
+      ]
+    },
+    {
+      "id": "demo-event-052",
+      "createdDateTime": "2026-11-16T09:46:20Z",
+      "userPrincipalName": "alex.morgan@example.com",
+      "userDisplayName": "Alex Morgan",
+      "userId": "demo-user-alex.morgan",
+      "appId": "demo-app-office",
+      "appDisplayName": "Microsoft Office",
+      "resourceDisplayName": "Microsoft Graph",
+      "ipAddress": "192.0.2.24",
+      "isInteractive": false,
+      "signInEventTypes": [
+        "nonInteractiveUser"
+      ],
+      "status": {
+        "errorCode": 53003,
+        "failureReason": "Access blocked by Conditional Access policies."
+      },
+      "conditionalAccessStatus": "failure",
+      "correlationId": "demo-correlation-52",
+      "originalRequestId": "demo-request-52",
+      "sessionId": "demo-session-incident",
+      "deviceDetail": {
+        "deviceId": "demo-device-01",
+        "displayName": "SYNTHETIC-WKS-01",
+        "operatingSystem": "Windows 11",
+        "browser": "",
+        "isCompliant": true,
+        "isManaged": true,
+        "trustType": "Azure AD joined"
+      },
+      "location": {
+        "city": "New York",
+        "countryOrRegion": "US"
+      },
+      "riskLevelDuringSignIn": "none",
+      "riskState": "none",
+      "clientAppUsed": "Mobile Apps and Desktop clients",
+      "authenticationRequirement": "multiFactorAuthentication",
+      "authenticationDetails": [
+        {
+          "authenticationStepDateTime": "2026-11-16T09:46:20Z",
+          "authenticationMethod": "Previously satisfied",
+          "succeeded": true,
+          "authenticationStepResultDetail": "MFA requirement satisfied by claim in the token"
+        }
+      ]
+    },
+    {
+      "id": "demo-event-053",
+      "createdDateTime": "2026-11-16T09:48:10Z",
+      "userPrincipalName": "jamie.chen@example.com",
+      "userDisplayName": "Jamie Chen",
+      "userId": "demo-user-jamie.chen",
+      "appId": "demo-app-office",
+      "appDisplayName": "Microsoft Office",
+      "resourceDisplayName": "Microsoft Graph",
+      "ipAddress": "203.0.113.99",
+      "isInteractive": true,
+      "signInEventTypes": [
+        "interactiveUser"
+      ],
+      "status": {
+        "errorCode": 53003,
+        "failureReason": "Access blocked by Conditional Access policies."
+      },
+      "conditionalAccessStatus": "failure",
+      "correlationId": "demo-correlation-53",
+      "originalRequestId": "demo-request-53",
+      "sessionId": "demo-session-jamie.chen",
+      "deviceDetail": {
+        "deviceId": "demo-device-01",
+        "displayName": "SYNTHETIC-WKS-01",
+        "operatingSystem": "Windows 11",
+        "browser": "Edge 132",
+        "isCompliant": true,
+        "isManaged": true,
+        "trustType": "Azure AD joined"
+      },
+      "location": {
+        "city": "London",
+        "countryOrRegion": "GB"
+      },
+      "riskLevelDuringSignIn": "high",
+      "riskState": "atRisk",
+      "clientAppUsed": "Browser",
+      "authenticationRequirement": "multiFactorAuthentication",
+      "appliedConditionalAccessPolicies": [
+        {
+          "id": "demo-ca-01",
+          "displayName": "Require phishing-resistant MFA",
+          "result": "success",
+          "enforcedGrantControls": [
+            "AuthenticationStrength"
+          ],
+          "enforcedSessionControls": []
+        },
+        {
+          "id": "demo-ca-02",
+          "displayName": "Require compliant device",
+          "result": "success",
+          "enforcedGrantControls": [
+            "CompliantDevice"
+          ],
+          "enforcedSessionControls": []
+        },
+        {
+          "id": "demo-ca-04",
+          "displayName": "Block high sign-in risk",
+          "result": "failure",
+          "enforcedGrantControls": [
+            "Block"
+          ],
+          "enforcedSessionControls": []
+        }
+      ],
+      "authenticationDetails": [
+        {
+          "authenticationStepDateTime": "2026-11-16T09:48:10Z",
+          "authenticationMethod": "FIDO2 security key",
+          "succeeded": true,
+          "authenticationStepResultDetail": "MFA completed"
+        }
+      ]
+    },
+    {
+      "id": "demo-event-054",
+      "createdDateTime": "2026-11-16T09:52:18Z",
+      "userPrincipalName": "alex.morgan@example.com",
+      "userDisplayName": "Alex Morgan",
+      "userId": "demo-user-alex.morgan",
+      "appId": "demo-app-office",
+      "appDisplayName": "Microsoft Office",
+      "resourceDisplayName": "Microsoft Graph",
+      "ipAddress": "192.0.2.24",
+      "isInteractive": true,
+      "signInEventTypes": [
+        "interactiveUser"
+      ],
+      "status": {
+        "errorCode": 0,
+        "failureReason": "",
+        "additionalDetails": ""
+      },
+      "conditionalAccessStatus": "success",
+      "correlationId": "demo-correlation-54",
+      "originalRequestId": "demo-event-054",
+      "sessionId": "demo-session-new",
+      "deviceDetail": {
+        "deviceId": "demo-device-01",
+        "displayName": "SYNTHETIC-WKS-01",
+        "operatingSystem": "Windows 11",
+        "browser": "Edge 132",
+        "isCompliant": true,
+        "isManaged": true,
+        "trustType": "Azure AD joined"
+      },
+      "location": {
+        "city": "New York",
+        "countryOrRegion": "US"
+      },
+      "riskLevelDuringSignIn": "none",
+      "riskState": "none",
+      "clientAppUsed": "Browser",
+      "authenticationRequirement": "multiFactorAuthentication",
+      "appliedConditionalAccessPolicies": [
+        {
+          "id": "demo-ca-01",
+          "displayName": "Require phishing-resistant MFA",
+          "result": "success",
+          "enforcedGrantControls": [
+            "AuthenticationStrength"
+          ],
+          "enforcedSessionControls": []
+        },
+        {
+          "id": "demo-ca-02",
+          "displayName": "Require compliant device",
+          "result": "success",
+          "enforcedGrantControls": [
+            "CompliantDevice"
+          ],
+          "enforcedSessionControls": []
+        }
+      ],
+      "authenticationDetails": [
+        {
+          "authenticationStepDateTime": "2026-11-16T09:52:18Z",
+          "authenticationMethod": "FIDO2 security key",
+          "succeeded": true,
+          "authenticationStepResultDetail": "MFA completed"
+        }
+      ]
+    },
+    {
+      "id": "demo-event-055",
+      "createdDateTime": "2026-11-16T10:00:00Z",
+      "userPrincipalName": "alex.morgan@example.com",
+      "userDisplayName": "Alex Morgan",
+      "userId": "demo-user-alex.morgan",
+      "appId": "demo-app-office",
+      "appDisplayName": "Microsoft Office",
+      "resourceDisplayName": "Microsoft Graph",
+      "ipAddress": "192.0.2.24",
+      "isInteractive": true,
+      "signInEventTypes": [
+        "interactiveUser"
+      ],
+      "status": {
+        "errorCode": 0,
+        "failureReason": "",
+        "additionalDetails": ""
+      },
+      "conditionalAccessStatus": "success",
+      "correlationId": "demo-correlation-55",
+      "originalRequestId": "demo-request-55",
+      "sessionId": "demo-session-new",
+      "deviceDetail": {
+        "deviceId": "demo-device-01",
+        "displayName": "SYNTHETIC-WKS-01",
+        "operatingSystem": "Windows 11",
+        "browser": "Edge 132",
+        "isCompliant": true,
+        "isManaged": true,
+        "trustType": "Azure AD joined"
+      },
+      "location": {
+        "city": "New York",
+        "countryOrRegion": "US"
+      },
+      "riskLevelDuringSignIn": "none",
+      "riskState": "none",
+      "clientAppUsed": "Browser",
+      "authenticationRequirement": "multiFactorAuthentication",
+      "appliedConditionalAccessPolicies": [
+        {
+          "id": "demo-ca-01",
+          "displayName": "Require phishing-resistant MFA",
+          "result": "success",
+          "enforcedGrantControls": [
+            "AuthenticationStrength"
+          ],
+          "enforcedSessionControls": []
+        },
+        {
+          "id": "demo-ca-02",
+          "displayName": "Require compliant device",
+          "result": "success",
+          "enforcedGrantControls": [
+            "CompliantDevice"
+          ],
+          "enforcedSessionControls": []
+        }
+      ],
+      "authenticationDetails": [
+        {
+          "authenticationStepDateTime": "2026-11-16T10:00:00Z",
+          "authenticationMethod": "FIDO2 security key",
+          "succeeded": true,
+          "authenticationStepResultDetail": "MFA completed"
+        }
+      ]
+    },
+    {
+      "id": "demo-event-056",
+      "createdDateTime": "2026-11-16T10:04:00Z",
+      "userPrincipalName": "sam.patel@example.com",
+      "userDisplayName": "Sam Patel",
+      "userId": "demo-user-sam.patel",
+      "appId": "demo-app-office",
+      "appDisplayName": "Microsoft Office",
+      "resourceDisplayName": "Microsoft Graph",
+      "ipAddress": "192.0.2.24",
+      "isInteractive": false,
+      "signInEventTypes": [
+        "nonInteractiveUser"
+      ],
+      "status": {
+        "errorCode": 0,
+        "failureReason": "",
+        "additionalDetails": ""
+      },
+      "conditionalAccessStatus": "success",
+      "correlationId": "demo-correlation-56",
+      "originalRequestId": "demo-request-56",
+      "sessionId": "demo-session-sam",
+      "deviceDetail": {
+        "deviceId": "demo-device-01",
+        "displayName": "SYNTHETIC-WKS-01",
+        "operatingSystem": "Windows 11",
+        "browser": "",
+        "isCompliant": true,
+        "isManaged": true,
+        "trustType": "Azure AD joined"
+      },
+      "location": {
+        "city": "New York",
+        "countryOrRegion": "US"
+      },
+      "riskLevelDuringSignIn": "none",
+      "riskState": "none",
+      "clientAppUsed": "Mobile Apps and Desktop clients",
+      "authenticationRequirement": "multiFactorAuthentication",
+      "appliedConditionalAccessPolicies": [
+        {
+          "id": "demo-ca-01",
+          "displayName": "Require phishing-resistant MFA",
+          "result": "success",
+          "enforcedGrantControls": [
+            "AuthenticationStrength"
+          ],
+          "enforcedSessionControls": []
+        },
+        {
+          "id": "demo-ca-02",
+          "displayName": "Require compliant device",
+          "result": "success",
+          "enforcedGrantControls": [
+            "CompliantDevice"
+          ],
+          "enforcedSessionControls": []
+        }
+      ],
+      "authenticationDetails": [
+        {
+          "authenticationStepDateTime": "2026-11-16T10:04:00Z",
+          "authenticationMethod": "Previously satisfied",
+          "succeeded": true,
+          "authenticationStepResultDetail": "MFA requirement satisfied by claim in the token"
+        }
+      ]
+    },
+    {
+      "id": "demo-event-057",
+      "createdDateTime": "2026-11-16T10:08:00Z",
+      "userPrincipalName": "alex.morgan@example.com",
+      "userDisplayName": "Alex Morgan",
+      "userId": "demo-user-alex.morgan",
+      "appId": "demo-app-office",
+      "appDisplayName": "Microsoft Office",
+      "resourceDisplayName": "Microsoft Graph",
+      "ipAddress": "192.0.2.24",
+      "isInteractive": false,
+      "signInEventTypes": [
+        "nonInteractiveUser"
+      ],
+      "status": {
+        "errorCode": 0,
+        "failureReason": "",
+        "additionalDetails": ""
+      },
+      "conditionalAccessStatus": "success",
+      "correlationId": "demo-correlation-57",
+      "originalRequestId": "demo-request-57",
+      "sessionId": "demo-session-new",
+      "deviceDetail": {
+        "deviceId": "demo-device-01",
+        "displayName": "SYNTHETIC-WKS-01",
+        "operatingSystem": "Windows 11",
+        "browser": "",
+        "isCompliant": true,
+        "isManaged": true,
+        "trustType": "Azure AD joined"
+      },
+      "location": {
+        "city": "New York",
+        "countryOrRegion": "US"
+      },
+      "riskLevelDuringSignIn": "none",
+      "riskState": "none",
+      "clientAppUsed": "Mobile Apps and Desktop clients",
+      "authenticationRequirement": "multiFactorAuthentication",
+      "appliedConditionalAccessPolicies": [
+        {
+          "id": "demo-ca-01",
+          "displayName": "Require phishing-resistant MFA",
+          "result": "success",
+          "enforcedGrantControls": [
+            "AuthenticationStrength"
+          ],
+          "enforcedSessionControls": []
+        },
+        {
+          "id": "demo-ca-02",
+          "displayName": "Require compliant device",
+          "result": "success",
+          "enforcedGrantControls": [
+            "CompliantDevice"
+          ],
+          "enforcedSessionControls": []
+        }
+      ],
+      "authenticationDetails": [
+        {
+          "authenticationStepDateTime": "2026-11-16T10:08:00Z",
+          "authenticationMethod": "Previously satisfied",
+          "succeeded": true,
+          "authenticationStepResultDetail": "MFA requirement satisfied by claim in the token"
+        }
+      ]
+    },
+    {
+      "id": "demo-event-058",
+      "createdDateTime": "2026-11-16T10:12:00Z",
+      "userPrincipalName": "sam.patel@example.com",
+      "userDisplayName": "Sam Patel",
+      "userId": "demo-user-sam.patel",
+      "appId": "demo-app-office",
+      "appDisplayName": "Microsoft Office",
+      "resourceDisplayName": "Microsoft Graph",
+      "ipAddress": "192.0.2.24",
+      "isInteractive": true,
+      "signInEventTypes": [
+        "interactiveUser"
+      ],
+      "status": {
+        "errorCode": 0,
+        "failureReason": "",
+        "additionalDetails": ""
+      },
+      "conditionalAccessStatus": "success",
+      "correlationId": "demo-correlation-58",
+      "originalRequestId": "demo-request-58",
+      "sessionId": "demo-session-sam",
+      "deviceDetail": {
+        "deviceId": "demo-device-01",
+        "displayName": "SYNTHETIC-WKS-01",
+        "operatingSystem": "Windows 11",
+        "browser": "Edge 132",
+        "isCompliant": true,
+        "isManaged": true,
+        "trustType": "Azure AD joined"
+      },
+      "location": {
+        "city": "New York",
+        "countryOrRegion": "US"
+      },
+      "riskLevelDuringSignIn": "none",
+      "riskState": "none",
+      "clientAppUsed": "Browser",
+      "authenticationRequirement": "multiFactorAuthentication",
+      "appliedConditionalAccessPolicies": [
+        {
+          "id": "demo-ca-01",
+          "displayName": "Require phishing-resistant MFA",
+          "result": "success",
+          "enforcedGrantControls": [
+            "AuthenticationStrength"
+          ],
+          "enforcedSessionControls": []
+        },
+        {
+          "id": "demo-ca-02",
+          "displayName": "Require compliant device",
+          "result": "success",
+          "enforcedGrantControls": [
+            "CompliantDevice"
+          ],
+          "enforcedSessionControls": []
+        }
+      ],
+      "authenticationDetails": [
+        {
+          "authenticationStepDateTime": "2026-11-16T10:12:00Z",
+          "authenticationMethod": "FIDO2 security key",
+          "succeeded": true,
+          "authenticationStepResultDetail": "MFA completed"
+        }
+      ]
+    },
+    {
+      "id": "demo-event-059",
+      "createdDateTime": "2026-11-16T10:16:00Z",
+      "userPrincipalName": "alex.morgan@example.com",
+      "userDisplayName": "Alex Morgan",
+      "userId": "demo-user-alex.morgan",
+      "appId": "demo-app-office",
+      "appDisplayName": "Microsoft Office",
+      "resourceDisplayName": "Microsoft Graph",
+      "ipAddress": "192.0.2.24",
+      "isInteractive": false,
+      "signInEventTypes": [
+        "nonInteractiveUser"
+      ],
+      "status": {
+        "errorCode": 0,
+        "failureReason": "",
+        "additionalDetails": ""
+      },
+      "conditionalAccessStatus": "success",
+      "correlationId": "demo-correlation-59",
+      "originalRequestId": "demo-request-59",
+      "sessionId": "demo-session-new",
+      "deviceDetail": {
+        "deviceId": "demo-device-01",
+        "displayName": "SYNTHETIC-WKS-01",
+        "operatingSystem": "Windows 11",
+        "browser": "",
+        "isCompliant": true,
+        "isManaged": true,
+        "trustType": "Azure AD joined"
+      },
+      "location": {
+        "city": "New York",
+        "countryOrRegion": "US"
+      },
+      "riskLevelDuringSignIn": "none",
+      "riskState": "none",
+      "clientAppUsed": "Mobile Apps and Desktop clients",
+      "authenticationRequirement": "multiFactorAuthentication",
+      "appliedConditionalAccessPolicies": [
+        {
+          "id": "demo-ca-01",
+          "displayName": "Require phishing-resistant MFA",
+          "result": "success",
+          "enforcedGrantControls": [
+            "AuthenticationStrength"
+          ],
+          "enforcedSessionControls": []
+        },
+        {
+          "id": "demo-ca-02",
+          "displayName": "Require compliant device",
+          "result": "success",
+          "enforcedGrantControls": [
+            "CompliantDevice"
+          ],
+          "enforcedSessionControls": []
+        }
+      ],
+      "authenticationDetails": [
+        {
+          "authenticationStepDateTime": "2026-11-16T10:16:00Z",
+          "authenticationMethod": "Previously satisfied",
+          "succeeded": true,
+          "authenticationStepResultDetail": "MFA requirement satisfied by claim in the token"
+        }
+      ]
+    },
+    {
+      "id": "demo-event-060",
+      "createdDateTime": "2026-11-16T10:20:00Z",
+      "userPrincipalName": "sam.patel@example.com",
+      "userDisplayName": "Sam Patel",
+      "userId": "demo-user-sam.patel",
+      "appId": "demo-app-office",
+      "appDisplayName": "Microsoft Office",
+      "resourceDisplayName": "Microsoft Graph",
+      "ipAddress": "192.0.2.24",
+      "isInteractive": false,
+      "signInEventTypes": [
+        "nonInteractiveUser"
+      ],
+      "status": {
+        "errorCode": 0,
+        "failureReason": "",
+        "additionalDetails": ""
+      },
+      "conditionalAccessStatus": "success",
+      "correlationId": "demo-correlation-60",
+      "originalRequestId": "demo-request-60",
+      "sessionId": "demo-session-sam",
+      "deviceDetail": {
+        "deviceId": "demo-device-01",
+        "displayName": "SYNTHETIC-WKS-01",
+        "operatingSystem": "Windows 11",
+        "browser": "",
+        "isCompliant": true,
+        "isManaged": true,
+        "trustType": "Azure AD joined"
+      },
+      "location": {
+        "city": "New York",
+        "countryOrRegion": "US"
+      },
+      "riskLevelDuringSignIn": "none",
+      "riskState": "none",
+      "clientAppUsed": "Mobile Apps and Desktop clients",
+      "authenticationRequirement": "multiFactorAuthentication",
+      "appliedConditionalAccessPolicies": [
+        {
+          "id": "demo-ca-01",
+          "displayName": "Require phishing-resistant MFA",
+          "result": "success",
+          "enforcedGrantControls": [
+            "AuthenticationStrength"
+          ],
+          "enforcedSessionControls": []
+        },
+        {
+          "id": "demo-ca-02",
+          "displayName": "Require compliant device",
+          "result": "success",
+          "enforcedGrantControls": [
+            "CompliantDevice"
+          ],
+          "enforcedSessionControls": []
+        }
+      ],
+      "authenticationDetails": [
+        {
+          "authenticationStepDateTime": "2026-11-16T10:20:00Z",
+          "authenticationMethod": "Previously satisfied",
+          "succeeded": true,
+          "authenticationStepResultDetail": "MFA requirement satisfied by claim in the token"
+        }
+      ]
+    }
+  ]
+}

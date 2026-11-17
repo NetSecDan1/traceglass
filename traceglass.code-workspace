@@ -1,0 +1,9 @@
+{
+  "folders": [{ "path": "." }],
+  "settings": {
+    "files.exclude": { "**/node_modules": true },
+    "search.exclude": { "**/node_modules": true, "**/data": true, "**/exports": true },
+    "files.trimTrailingWhitespace": true,
+    "editor.formatOnSave": false,
+  },
+}
