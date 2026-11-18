@@ -42,6 +42,17 @@ export function markdownReport(investigation) {
       `Evidence event IDs: ${(f.eventIds || []).map(cell).join(', ')}`,
       '',
     );
+  for (const [title, rows] of [
+    ['Failures by error code', analysis.breakdowns?.errorCodes],
+    ['Failures by IP address', analysis.breakdowns?.ipAddresses],
+    ['Failures by application', analysis.breakdowns?.applications],
+  ])
+    if (rows?.length) {
+      lines.push(`## ${title}`, '', '| Value | Failures | Event IDs |', '|---|---|---|');
+      for (const r of rows)
+        lines.push(`| ${cell(r.key)} | ${r.count} | ${r.eventIds.map(cell).join(', ')} |`);
+      lines.push('');
+    }
   lines.push('## Coverage and caveats', '');
   for (const c of [...(metadata.warnings || []), ...(analysis.caveats || [])])
     lines.push(`- ${cell(c)}`);
