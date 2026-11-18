@@ -418,3 +418,20 @@ test('spike query refuses a window without prior baseline time', () => {
   assert.throws(() => buildKql({ preset: 'spikes', hours: 1 }), /at least 2 hours/);
   assert.match(buildKql({ preset: 'spikes', hours: 24 }).query, /BaselineRecords >= 20/);
 });
+
+test('failure breakdowns group by code, IP and app with traceable event IDs', () => {
+  const fail = (id, code, ip, app) =>
+    record({ id, status: { errorCode: code }, ipAddress: ip, appDisplayName: app });
+  const { breakdowns } = analyze(
+    normalizeEvents([
+      fail('1', 50126, '203.0.113.5', 'Office'),
+      fail('2', 50126, '203.0.113.5', 'Teams'),
+      fail('3', 53003, '', 'Office'),
+      record({ id: '4' }),
+    ]),
+  );
+  assert.deepEqual(breakdowns.errorCodes[0], { key: '50126', count: 2, eventIds: ['1', '2'] });
+  assert.equal(breakdowns.ipAddresses.length, 1);
+  assert.equal(breakdowns.applications[0].key, 'Office');
+  assert.ok(!breakdowns.errorCodes.some((g) => g.eventIds.includes('4')));
+});

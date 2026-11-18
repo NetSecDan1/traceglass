@@ -97,6 +97,16 @@ function terminalReport(result) {
     lines.push(
       `${e.timestamp || 'Unknown time'}  ${e.isInteractive === true ? 'INTERACTIVE    ' : e.isInteractive === false ? 'NON-INTERACTIVE' : 'UNKNOWN        '}  ${String(e.status.errorCode ?? '?').padEnd(6)} CA:${e.conditionalAccessStatus}  ${e.appDisplayName} → ${e.resourceDisplayName}  [${e.id}]`,
     );
+  const { breakdowns } = result.analysis;
+  for (const [title, rows] of [
+    ['FAILURES BY ERROR CODE', breakdowns.errorCodes],
+    ['FAILURES BY IP ADDRESS', breakdowns.ipAddresses],
+    ['FAILURES BY APPLICATION', breakdowns.applications],
+  ])
+    if (rows.length) {
+      lines.push('', title);
+      for (const row of rows) lines.push(`  ${String(row.count).padStart(4)}  ${row.key}`);
+    }
   lines.push('', 'LINK EVIDENCE');
   for (const l of result.analysis.links)
     lines.push(`${l.from} → ${l.to}  [${l.strength}] ${l.reason}`);

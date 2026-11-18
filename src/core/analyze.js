@@ -7,8 +7,8 @@ const sameIdentity = (a, b) =>
     ? a.userId === b.userId
     : Boolean(
         a.userPrincipalName &&
-          b.userPrincipalName &&
-          a.userPrincipalName.toLowerCase() === b.userPrincipalName.toLowerCase(),
+        b.userPrincipalName &&
+        a.userPrincipalName.toLowerCase() === b.userPrincipalName.toLowerCase(),
       );
 
 /** Analyze observed evidence. Shared identifiers establish an association, not causality. */
@@ -203,6 +203,11 @@ export function analyze(events) {
         aggregate[policy.result]++;
       else aggregate.other++;
     }
+  const breakdowns = {
+    errorCodes: breakdown(events.filter(isFailure), (e) => String(e.status.errorCode)),
+    ipAddresses: breakdown(events.filter(isFailure), (e) => e.ipAddress),
+    applications: breakdown(events.filter(isFailure), (e) => e.appDisplayName),
+  };
   const spikes = detectSpikes(ordered);
   if (spikes.candidates.length)
     findings.push({
@@ -234,6 +239,7 @@ export function analyze(events) {
     links,
     policies: [...policies.values()].sort((a, b) => b.failure - a.failure || b.total - a.total),
     spikes,
+    breakdowns,
     coverage: {
       policyDetailsAvailable: events.length - missing.length,
       policyDetailsMissing: missing.length,
@@ -276,4 +282,20 @@ function detectSpikes(events) {
     caveat:
       'Five-minute observed-event buckets; compare at least 20 preceding records, minimum 5 current records and 3 CA failures, rate above 3× baseline and 20%. Sparse or partial samples are not tenant baselines. Empty buckets are not evidence of successful operation.',
   };
+}
+
+/** Group failed events by a key; every group carries its event IDs so counts stay traceable. Blank keys are skipped. */
+function breakdown(events, keyOf, limit = 10) {
+  const groups = new Map();
+  for (const event of events) {
+    const key = keyOf(event);
+    if (!key) continue;
+    if (!groups.has(key)) groups.set(key, { key, count: 0, eventIds: [] });
+    const group = groups.get(key);
+    group.count++;
+    group.eventIds.push(event.id);
+  }
+  return [...groups.values()]
+    .sort((a, b) => b.count - a.count || a.key.localeCompare(b.key))
+    .slice(0, limit);
 }
